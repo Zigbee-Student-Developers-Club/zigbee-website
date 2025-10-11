@@ -1,0 +1,33 @@
+name: "📝 Task / Other"
+description: "Add tasks or other non-bug/non-feature issues for the Zigbee website"
+title: "[TASK] "
+labels: ["task"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Task / Issue Description
+        Describe the task or issue in detail.
+
+  - type: input
+    id: context
+    attributes:
+      label: "Context / Motivation"
+      description: "Why is this task important or needed?"
+      placeholder: "E.g., setup project, update documentation, refactor code, etc."
+
+  - type: input
+    id: expected-outcome
+    attributes:
+      label: "Expected Outcome"
+      description: "What should be the result after completing this task?"
+      placeholder: "E.g., project runs correctly, documentation updated ..."
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: "Additional Notes"
+      description: "Any extra context, links, or references."
+      placeholder: "Add anything else relevant."
