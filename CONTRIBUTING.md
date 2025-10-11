@@ -12,7 +12,7 @@ Zigbee is a student-run community led by OUTR MCA students, dedicated to fosteri
 
 - For each issue, create a **new separate branch**, e.g., `2-setup-next-app`.
 - **Do not commit directly to the `main` branch**.
-- Always **squash commits** before creating a Pull Request (PR).
+- Always **squash commits** before merging the Pull Request (PR), use **Squash & merge** option from dropdown.
 - Follow commit conventions, e.g., `Implemented hero section`. Use **past tense** for commit messages.
 
 ---
