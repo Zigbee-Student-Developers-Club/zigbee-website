@@ -1,0 +1,33 @@
+name: "✨ Feature Request"
+description: "Suggest a new feature or improvement for the Zigbee website"
+title: "[FEATURE] "
+labels: ["enhancement"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Description
+        Describe the feature you want to add or the improvement.
+
+  - type: input
+    id: motivation
+    attributes:
+      label: "Why is this feature needed?"
+      description: "Explain why this feature would be useful."
+      placeholder: "E.g., to improve UX, add new functionality, etc."
+
+  - type: input
+    id: proposed-solution
+    attributes:
+      label: "Proposed Solution / Implementation"
+      description: "If you have an idea for implementation, describe it here."
+      placeholder: "Add details about how you would implement this feature."
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context / References"
+      description: "Any other context, screenshots, links, or inspiration."
+      placeholder: "Add anything else relevant."

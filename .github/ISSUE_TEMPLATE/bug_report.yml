@@ -1,0 +1,40 @@
+name: "🐛 Bug Report"
+description: "Report a bug in the Zigbee website"
+title: "[BUG] "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Description
+        Describe the bug in detail. What is happening that shouldn't, or what is broken?
+
+  - type: input
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Provide step-by-step instructions to reproduce the issue."
+      placeholder: "1. Go to ...\n2. Click on ...\n3. Observe ..."
+
+  - type: input
+    id: expected-behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "What you expected to happen."
+      placeholder: "The page should render ..."
+
+  - type: input
+    id: actual-behavior
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happened."
+      placeholder: "The page crashes / shows incorrect data ..."
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context / Screenshots"
+      description: "Add any other context or screenshots to help understand the bug."
+      placeholder: "Add screenshots or error messages here."
