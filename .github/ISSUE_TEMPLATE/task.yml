@@ -11,14 +11,14 @@ body:
         ## Task / Issue Description
         Describe the task or issue in detail.
 
-  - type: input
+  - type: textarea
     id: context
     attributes:
       label: "Context / Motivation"
       description: "Why is this task important or needed?"
       placeholder: "E.g., setup project, update documentation, refactor code, etc."
 
-  - type: input
+  - type: textarea
     id: expected-outcome
     attributes:
       label: "Expected Outcome"

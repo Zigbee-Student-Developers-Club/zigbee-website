@@ -11,14 +11,14 @@ body:
         ## Feature Description
         Describe the feature you want to add or the improvement.
 
-  - type: input
+  - type: textarea
     id: motivation
     attributes:
       label: "Why is this feature needed?"
       description: "Explain why this feature would be useful."
       placeholder: "E.g., to improve UX, add new functionality, etc."
 
-  - type: input
+  - type: textarea
     id: proposed-solution
     attributes:
       label: "Proposed Solution / Implementation"

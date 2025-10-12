@@ -11,21 +11,21 @@ body:
         ## Description
         Describe the bug in detail. What is happening that shouldn't, or what is broken?
 
-  - type: input
+  - type: textarea
     id: steps-to-reproduce
     attributes:
       label: "Steps to Reproduce"
       description: "Provide step-by-step instructions to reproduce the issue."
       placeholder: "1. Go to ...\n2. Click on ...\n3. Observe ..."
 
-  - type: input
+  - type: textarea
     id: expected-behavior
     attributes:
       label: "Expected Behavior"
       description: "What you expected to happen."
       placeholder: "The page should render ..."
 
-  - type: input
+  - type: textarea
     id: actual-behavior
     attributes:
       label: "Actual Behavior"
