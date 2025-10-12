@@ -1,15 +1,8 @@
-# Pull Request Template 🚀
-
-## Description
-
-Please include a summary of the changes and the related issue.
-List any dependencies that are required for this change.
-
-Fixes # (issue number)
+- Fixes # (issue number)
 
 ---
 
-## Type of Change
+### Type of Change
 
 Please delete options that are not relevant.
 
@@ -21,25 +14,25 @@ Please delete options that are not relevant.
 
 ---
 
-## Checklist
+### Checklist
 
 - [ ] I have read the **CONTRIBUTING.md** guidelines.
-- [ ] My code follows the project’s coding style and conventions.
 - [ ] I have performed a **self-review** of my code.
 - [ ] I have added tests that prove my fix/feature works (if applicable).
 - [ ] I have added necessary **documentation** updates (if applicable).
 - [ ] I have assigned reviewers and requested a review.
+- [ ] My code follows the project’s coding style and conventions.
 
 ---
 
-## How Has This Been Tested?
+### How Has This Been Tested?
 
 - Describe the tests you ran to verify your changes.
 - Provide screenshots if applicable.
 
 ---
 
-## Additional Context / Notes
+### Additional Context / Notes
 
 Add any other context about the PR here.
 E.g., implementation choices, known issues, or references to discussion.
