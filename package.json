@@ -2,6 +2,17 @@
   "name": "zigbee-website",
   "version": "0.1.0",
   "private": true,
+  "description": "Zigbee is a student-run community, led by OUTR MCA students, dedicated to fostering software development skills and innovation.",
+  "author": "Community Contributors",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zigbee-Student-Developers-Club/zigbee-website"
+  },
+  "homepage": "https://zigbeeoutr.in",
+  "bugs": {
+    "url": "https://github.com/Zigbee-Student-Developers-Club/zigbee-website/issues"
+  },
   "scripts": {
     "preinstall": "only-allow yarn",
     "dev": "next dev --turbopack",
@@ -48,5 +59,23 @@
     "npm": ">=9",
     "yarn": ">=1.22"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "keywords": [
+    "community",
+    "collaboration",
+    "nextjs",
+    "react",
+    "zigbee",
+    "open-source",
+    "webapp",
+    "OUTR",
+    "MCA",
+    "Odisha University of Technology & Research, Bhubaneswar",
+    "zigbee-outr",
+    "zigbee-website",
+    "zigbee-outr-website",
+    "Master of Computer Applications",
+    "College of Engineering & Technology",
+    "Bhubaneswar"
+  ]
 }
