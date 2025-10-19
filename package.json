@@ -2,26 +2,80 @@
   "name": "zigbee-website",
   "version": "0.1.0",
   "private": true,
+  "description": "Zigbee is a student-run community, led by OUTR MCA students, dedicated to fostering software development skills and innovation.",
+  "author": "Community Contributors",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zigbee-Student-Developers-Club/zigbee-website"
+  },
+  "homepage": "https://zigbeeoutr.in",
+  "bugs": {
+    "url": "https://github.com/Zigbee-Student-Developers-Club/zigbee-website/issues"
+  },
   "scripts": {
+    "preinstall": "only-allow yarn",
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
   },
   "dependencies": {
+    "next": "15.5.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.4"
+    "react-dom": "19.1.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --cache --fix --no-warn-ignored",
+      "prettier --write"
+    ],
+    "*.{json,md,css}": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
-    "@eslint/eslintrc": "^3"
-  }
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.4",
+    "only-allow": "^1.2.1",
+    "prettier": "3.6.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.13",
+    "npm": ">=9",
+    "yarn": ">=1.22"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "keywords": [
+    "community",
+    "collaboration",
+    "nextjs",
+    "react",
+    "zigbee",
+    "open-source",
+    "webapp",
+    "OUTR",
+    "MCA",
+    "Odisha University of Technology & Research, Bhubaneswar",
+    "zigbee-outr",
+    "zigbee-website",
+    "zigbee-outr-website",
+    "Master of Computer Applications",
+    "College of Engineering & Technology",
+    "Bhubaneswar"
+  ]
 }
