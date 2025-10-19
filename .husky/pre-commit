@@ -1,0 +1,7 @@
+. "$(dirname "$0")/helpers/lint_staged.sh"
+. "$(dirname "$0")/helpers/prevent_pushing_to_main.sh"
+. "$(dirname "$0")/helpers/prevent_conflict_markers.sh"
+
+prevent_pushing_to_main
+prevent_conflict_markers
+lint_staged_files
