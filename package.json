@@ -14,7 +14,7 @@
     "url": "https://github.com/Zigbee-Student-Developers-Club/zigbee-website/issues"
   },
   "scripts": {
-    "preinstall": "only-allow yarn",
+    "preinstall": "npx only-allow yarn",
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
