@@ -1,9 +1,11 @@
+import classNames from "classnames";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import { ToastContainer } from "react-toastify";
 
+import { Footer, Header } from "@/components/commons";
 import ThemeProvider from "@/providers/Theme";
 
 const nunito = Nunito({
@@ -18,16 +20,23 @@ const RootLayout = ({
 }>) => {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`${nunito.className} antialiased`}>
+      <body
+        className={classNames(
+          nunito.className,
+          "antialiased overflow-x-hidden min-w-800 w-screen flex flex-col"
+        )}
+      >
         <ThemeProvider
           disableTransitionOnChange
           enableSystem
           attribute="class"
           defaultTheme="light" // TODO: Change to "system"
         >
-          {children}
+          <Header />
+          <main className="flex-1 min-h-0 w-full">{children}</main>
+          <Footer />
+          <ToastContainer newestOnTop />
         </ThemeProvider>
-        <ToastContainer />
       </body>
     </html>
   );
