@@ -23,7 +23,7 @@ const RootLayout = ({
       <body
         className={classNames(
           nunito.className,
-          "antialiased overflow-x-hidden min-w-800 w-screen flex flex-col"
+          "antialiased overflow-x-hidden flex flex-col w-full"
         )}
       >
         <ThemeProvider
@@ -33,7 +33,7 @@ const RootLayout = ({
           defaultTheme="light" // TODO: Change to "system"
         >
           <Header />
-          <main className="flex-1 min-h-0 w-full">{children}</main>
+          <main className="min-h-0 flex-1 w-full pt-20">{children}</main>
           <Footer />
           <ToastContainer newestOnTop />
         </ThemeProvider>
