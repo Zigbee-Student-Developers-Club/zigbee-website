@@ -1,11 +1,35 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import React from "react";
+
+import ThemeProvider from "@/providers/Theme";
 
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900", "1000"],
 });
+
+const RootLayout = ({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
+  return (
+    <html suppressHydrationWarning lang="en">
+      <body className={`${nunito.className} antialiased`}>
+        <ThemeProvider
+          disableTransitionOnChange
+          enableSystem
+          attribute="class"
+          defaultTheme="light" // TODO: Change to "system"
+        >
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+};
 
 export const metadata: Metadata = {
   title: "Zigbee Student Developers' Club, OUTR (CETB), Bhubaneswar",
@@ -89,14 +113,4 @@ export const metadata: Metadata = {
   // manifest: "/site.webmanifest",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={`${nunito.className} antialiased`}>{children}</body>
-    </html>
-  );
-}
+export default RootLayout;
