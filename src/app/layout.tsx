@@ -23,7 +23,7 @@ const RootLayout = ({
       <body
         className={classNames(
           nunito.className,
-          "antialiased overflow-x-hidden flex flex-col w-full"
+          "antialiased overflow-x-hidden flex flex-col w-full min-h-screen"
         )}
       >
         <ThemeProvider
