@@ -4,6 +4,7 @@ const routes = {
   resources: "/resources",
   magazines: "/magazines",
   alumni: "/alumni",
+  about: "/about",
   auth: {
     login: "/login",
     signup: "/signup",

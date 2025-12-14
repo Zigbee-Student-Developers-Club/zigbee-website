@@ -28,26 +28,27 @@ export const navItems: NavItem[] = [
     name: "Alumni",
     link: routes.alumni,
   },
+  {
+    name: "About us",
+    link: routes.about,
+  },
 ];
 
 export const footerItemLinks = [
   {
     label: "About & Team",
     value: [
-      { label: "About Us", href: "/about" },
-      { label: "Our Team", href: "/team" },
-      { label: "Mission", href: "/mission" },
-      { label: "Join Us", href: "/join" },
+      { label: "About Us", href: routes.about },
+      { label: "Our Team", href: routes.about },
+      { label: "Join Us", href: routes.auth.login },
     ],
   },
   {
     label: "Popular Links",
     value: [
-      { label: "Events", href: "/events" },
-      { label: "Workshops", href: "/workshops" },
-      { label: "Projects", href: "/projects" },
-      { label: "Resources", href: "/resources" },
-      { label: "Alumni", href: "/alumni" },
+      { label: "Events & workshops", href: routes.events },
+      { label: "Resources", href: routes.resources },
+      { label: "Alumni", href: routes.alumni },
     ],
   },
 ];
