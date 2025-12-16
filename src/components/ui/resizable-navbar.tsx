@@ -72,7 +72,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   return (
     <motion.div
       animate={{ opacity: 1, y: 0 }}
-      className={cn("fixed inset-x-0 top-5 z-40 w-full", className)}
+      className={cn("fixed inset-x-0 top-2 z-40 w-full", className)}
       initial={{ opacity: 0, y: -40 }}
       ref={ref}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -93,7 +93,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
 export const NavBody = ({ children, className, visible }: NavBodyProps) => {
   return (
     <motion.div
-      style={{ minWidth: "800px" }}
+      style={{ minWidth: "1100px" }}
       transition={{ damping: 28, stiffness: 180, type: "spring" }}
       animate={{
         backdropFilter: visible ? "blur(12px)" : "none",
@@ -102,7 +102,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         y: visible ? 18 : 0,
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden max-w-7xl items-center justify-between rounded-full px-2 py-2 lg:flex",
+        "relative z-[60] mx-auto hidden max-w-7xl items-center justify-between rounded-full px-7 py-2 lg:flex",
         visible && "bg-white/80 dark:bg-neutral-950/80",
         className
       )}
@@ -177,7 +177,7 @@ export const MobileNavHeader = ({
 }: MobileNavHeaderProps) => (
   <div
     className={cn(
-      "flex w-full items-center justify-between px-3 py-2",
+      "flex w-full items-center justify-between px-3 py-2 rounded-2xl ",
       className
     )}
   >
@@ -231,8 +231,14 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = () => (
   <motion.div whileHover={{ scale: 1.04 }}>
-    <Link className="flex items-center gap-2" href="/">
-      <Image alt="Zigbee Logo" height={30} src="/logo.png" width={30} />
+    <Link className="flex items-center gap-2 " href="/">
+      <Image
+        alt="Zigbee Logo"
+        className="rounded-full"
+        height={30}
+        src="/logo.png"
+        width={30}
+      />
       <span className="font-bold">Zigbee Student Developers' Club</span>
     </Link>
   </motion.div>
