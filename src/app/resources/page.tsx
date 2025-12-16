@@ -1,6 +1,6 @@
 import React from "react";
 
-import PageHeader from "@/components/commons/PageHeader";
+import { PageHeader } from "@/components/commons";
 
 const Resources = () => {
   return (
