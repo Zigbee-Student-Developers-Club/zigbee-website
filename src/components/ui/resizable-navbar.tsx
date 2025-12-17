@@ -8,6 +8,7 @@ import {
 } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
@@ -124,18 +125,19 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
 
 export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
+  const pathName = usePathname();
 
   return (
     <motion.div
       className={cn(
-        "hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2",
+        " flex flex-col md:flex-row gap-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 ",
         className
       )}
       onMouseLeave={() => setHovered(null)}
     >
       {items.map((item, idx) => (
         <a
-          className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300"
+          className={`relative px-2 md:px-4  py-2 text-neutral-600 dark:text-neutral-300 ${pathName === item.link ? "bg-gray-100 rounded md:rounded-full" : ""}`}
           href={item.link}
           key={`link-${idx}`}
           onClick={onItemClick}
@@ -143,7 +145,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         >
           {hovered === idx && (
             <motion.div
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="absolute inset-0 h-full w-full md:rounded-full bg-gray-100 dark:bg-neutral-800"
               layoutId="hovered"
             />
           )}
