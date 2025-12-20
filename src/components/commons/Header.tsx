@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "motion/react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 import {
@@ -15,6 +16,7 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { navItems } from "@/constants";
+import routes from "@/routes";
 
 const container = {
   hidden: { opacity: 0 },
@@ -36,6 +38,7 @@ const mobileItem = {
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <motion.div
@@ -68,7 +71,9 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <NavbarButton variant="dark">Join the club</NavbarButton>
+            <NavbarButton href={routes.auth.signup} variant="dark">
+              Join the club
+            </NavbarButton>
           </motion.div>
         </NavBody>
 
@@ -113,7 +118,10 @@ const Header = () => {
                     <NavbarButton
                       className="w-full border border-black dark:border-white"
                       variant="primary"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        router.push(routes.auth.signup);
+                      }}
                     >
                       Join the club
                     </NavbarButton>

@@ -7,7 +7,7 @@ const routes = {
   about: "/about",
   auth: {
     login: "/login",
-    signup: "/signup",
+    signup: "/sign-up",
   },
 };
 
