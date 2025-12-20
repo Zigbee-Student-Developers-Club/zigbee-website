@@ -6,7 +6,7 @@ import { VolumeProps } from "./constants";
 
 const Card = ({ title, image, year, volume }: VolumeProps) => {
   return (
-    <div className="group relative overflow-hidden rounded-2xl bg-card transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full">
+    <div className="group relative overflow-hidden rounded-2xl bg-card transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full shadow">
       <div className="aspect-[3/4] overflow-hidden bg-muted flex-shrink-0">
         <Image
           alt={title}
