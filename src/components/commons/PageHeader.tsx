@@ -14,8 +14,8 @@ interface PageHeaderProps {
 const PageHeader = ({
   title,
   description = "",
-  backgroundImage = "",
-  className,
+  backgroundImage = "/logo.png",
+  className = "",
 }: PageHeaderProps) => {
   return (
     <section
@@ -45,9 +45,9 @@ const PageHeader = ({
         </h1>
         <Image
           alt="section separator"
-          height={12}
+          height={18}
           src="/separator.png"
-          width={120}
+          width={240}
           className={classNames("mx-auto mt-4 opacity-80", {
             hidden: !description,
           })}
