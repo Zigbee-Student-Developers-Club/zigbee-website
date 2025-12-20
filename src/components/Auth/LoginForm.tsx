@@ -3,19 +3,18 @@ import { Form, Formik } from "formik";
 import Link from "next/link";
 import { useState } from "react";
 
-import { InitialValues, ValidationSchema } from "@/lib/Schema/signup";
+import { InitialValues, ValidationSchema } from "@/lib/Schema/login";
 import routes from "@/routes";
 
 import TextField from "../Fields/TextField";
 import { Button } from "../ui/button";
 
-const SignupForm = () => {
+const LoginForm = () => {
   const [loading, setLoading] = useState(false);
-
   const handleRegister = async () => {
     setLoading(true);
 
-    // handle register
+    // handle user login
   };
 
   return (
@@ -28,20 +27,14 @@ const SignupForm = () => {
         <Form className="flex flex-col w-full space-y-5 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 rounded-xl shadow-lg">
           <div className="text-center space-y-2">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Join the Zigbee Developer Community!
+              Welcome Back to Zigbee!
             </h2>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Code, Collaborate, Create
+              Log in to access protected information.
             </p>
           </div>
 
           <div className="space-y-4">
-            <TextField
-              label="Full Name"
-              name="fullName"
-              placeholder="John Doe"
-              type="text"
-            />
             <TextField
               label="Email"
               name="email"
@@ -55,18 +48,6 @@ const SignupForm = () => {
               placeholder="********"
               type="password"
             />
-            <TextField
-              label="Confirm Password"
-              name="confirmPassword"
-              placeholder="********"
-              type="password"
-            />
-            <TextField
-              label="Batch (Pass-Out Year)"
-              name="batch"
-              placeholder="2026"
-              type="text"
-            />
           </div>
 
           <div className="space-y-4">
@@ -75,7 +56,7 @@ const SignupForm = () => {
               disabled={loading}
               type="submit"
             >
-              {loading ? "Signing up..." : "Sign up"}
+              {loading ? "Logging in..." : "Log in"}
             </Button>
 
             <div className="relative">
@@ -84,7 +65,7 @@ const SignupForm = () => {
               </div>
               <div className="relative flex justify-center text-sm">
                 <span className="px-2 bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400">
-                  Already have an account?
+                  Don't have an account?
                 </span>
               </div>
             </div>
@@ -92,9 +73,9 @@ const SignupForm = () => {
             <div className="text-center">
               <Link
                 className="text-sm font-medium text-black dark:text-white hover:text-gray-700 dark:hover:text-gray-300 underline underline-offset-4 transition-colors"
-                href={routes.auth.login}
+                href={routes.auth.signup}
               >
-                Log in to Zigbee
+                Sign up for Zigbee
               </Link>
             </div>
           </div>
@@ -104,4 +85,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default LoginForm;
