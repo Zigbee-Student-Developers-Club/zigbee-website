@@ -1,43 +1,19 @@
 "use client";
 import { Form, Formik } from "formik";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
-import toast from "react-hot-toast";
 
-import {
-  InitialValues,
-  SignUpTypes,
-  ValidationSchema,
-} from "@/lib/Schema/signup";
-import { SignupUser } from "@/utils/helper";
+import { InitialValues, ValidationSchema } from "@/lib/Schema/signup";
 
 import TextField from "../Fields/TextField";
 import { Button } from "../ui/button";
 
 const SignupFrom = () => {
   const [loading, setLoading] = useState(false);
-  const Router = useRouter();
-  const handleRegister = async (
-    values: SignUpTypes,
-    { resetForm }: { resetForm: () => void }
-  ) => {
+
+  const handleRegister = async () => {
     setLoading(true);
 
-    toast
-      .promise(SignupUser(values), {
-        success: "Successfully Signed up",
-        loading: "Signning up in process",
-      })
-      .then(() => {
-        resetForm();
-        Router.push("/sign-in");
-      })
-      .catch(error => {
-        toast.error(error.message);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    // handle register
   };
 
   return (
