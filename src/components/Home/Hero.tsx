@@ -10,7 +10,10 @@ import {
   LucideIcon,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+
+import routes from "@/routes";
 
 import RatingBadge from "./RatingBadge";
 import StatCard from "./StatCard";
@@ -34,7 +37,7 @@ const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
   ];
 
   return (
-    <section className="relative py-12 md:py-20 overflow-hidden">
+    <section className="relative py-12 px-8 md:py-20 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob" />
@@ -50,7 +53,7 @@ const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm shadow-lg border border-purple-100 mb-8">
             <Sparkles className="w-4 h-4 text-purple-600" />
             <p className="text-sm md:text-base font-medium bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              Official Technical Club of OUTR
+              Official Technical Club of MCA Department, OUTR
             </p>
           </div>
         </div>
@@ -70,16 +73,18 @@ const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
               </span>
               <br />
               <span className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 bg-clip-text text-transparent">
-                of OUTR
+                of MCA Department, OUTR
               </span>
             </h1>
 
             <RatingBadge rating={4.8} reviewCount={400} />
 
-            <button className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
-              Join Our Community
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            <Link href={routes.auth.signup}>
+              <button className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                Join Our Community
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </Link>
           </div>
 
           {/* Right Content - Hero Image with Stats */}

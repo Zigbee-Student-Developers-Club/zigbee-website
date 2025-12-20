@@ -1,5 +1,8 @@
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
+
+import routes from "@/routes";
 
 const Cta: React.FC = () => {
   return (
@@ -20,13 +23,17 @@ const Cta: React.FC = () => {
             their skills in our creative tech community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group px-8 py-4 bg-white text-purple-600 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
-              Get Started Today
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 rounded-full font-semibold hover:bg-white/20 transition-all duration-300">
-              View Our Events
-            </button>
+            <Link href={routes.auth.signup}>
+              <button className="cursor-pointer group px-8 py-4 bg-white text-purple-600 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                Get Started Today
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </Link>
+            <Link href={routes.events}>
+              <button className="cursor-pointer px-8 py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 rounded-full font-semibold hover:bg-white/20 transition-all duration-300">
+                View Our Events
+              </button>
+            </Link>
           </div>
         </div>
       </div>

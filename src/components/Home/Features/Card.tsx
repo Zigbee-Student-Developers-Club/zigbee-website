@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -42,11 +41,6 @@ const Card: React.FC<FeatureCardProps> = ({
         <div className="p-8 space-y-4">
           <h3 className="text-2xl font-bold text-slate-900">{title}</h3>
           <p className="text-slate-600 leading-relaxed">{description}</p>
-
-          <button className="inline-flex items-center gap-2 text-purple-600 font-semibold group-hover:gap-3 transition-all duration-300">
-            Learn More
-            <ArrowRight className="w-4 h-4" />
-          </button>
         </div>
 
         {/* Decorative Corner */}
