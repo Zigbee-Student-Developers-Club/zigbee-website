@@ -45,7 +45,7 @@ export const EVENTS_DATA: Event[] = [
     location: "Auditorium",
     description:
       "Our flagship 24-hour coding battle. Over 50 teams participated from across the state.",
-    image: "/coding-competition-banner-with-code-on-screen.jpg",
+    image: "/logo.png",
     status: "past",
     eventType: "workshop",
     competitionType: "team",
@@ -58,7 +58,7 @@ export const EVENTS_DATA: Event[] = [
           "Ashutosh Prusty",
           "Jayashree Praharaj",
         ],
-        image: "/team-of-developers-celebrating-with-trophy.jpg",
+        image: "/logo.png",
       },
       runnersUp: {
         teamName: "Team Heart2Hand",
@@ -68,16 +68,17 @@ export const EVENTS_DATA: Event[] = [
           "Abinash Nayak",
           "Monalisa Rout",
         ],
-        image: "/coding-team-celebrating-runners-up-position.jpg",
+        image: "/logo.png",
       },
     },
     galleryImages: [
-      "/students-coding-in-computer-lab.jpg",
-      "/coding-competition-participants-working.jpg",
-      "/hackathon-collaboration.png",
-      "/programming-contest-at-university.jpg",
-      "/students-presenting-coding-project.jpg",
-      "/tech-competition-venue-with-screens.jpg",
+      "/logo.png",
+      "/logo.png",
+      "/logo.png",
+      "/logo.png",
+      "/logo.png",
+      "/logo.png",
+      "/logo.png",
     ],
   },
   {
@@ -88,7 +89,7 @@ export const EVENTS_DATA: Event[] = [
     location: "Computer Lab 1",
     description:
       "Individual coding competition testing aptitude and data structures knowledge.",
-    image: "/data-structures-and-algorithms-competition.jpg",
+    image: "/logo.png",
     status: "past",
     eventType: "workshop",
     competitionType: "individual",
@@ -97,27 +98,22 @@ export const EVENTS_DATA: Event[] = [
         name: "Prabodh Kumar Panda",
         position: "1st",
         year: "2024",
-        image: "/young-male-computer-science-student.jpg",
+        image: "/logo.png",
       },
       {
         name: "Abinash Nayak",
         position: "2nd",
         year: "2024",
-        image: "/male-tech-student-with-trophy.jpg",
+        image: "/logo.png",
       },
       {
         name: "Ananya Swain",
         position: "3rd",
         year: "2024",
-        image: "/female-computer-science-student-smiling.jpg",
+        image: "/logo.png",
       },
     ],
-    galleryImages: [
-      "/students-taking-coding-exam.jpg",
-      "/computer-lab-aptitude-test.jpg",
-      "/programming-competition-focused-students.jpg",
-      "/placeholder.svg?height=300&width=400",
-    ],
+    galleryImages: ["/logo.png", "/logo.png", "/logo.png", "/logo.png"],
   },
   {
     id: "reactjs-bootcamp",
@@ -127,14 +123,10 @@ export const EVENTS_DATA: Event[] = [
     location: "Computer Lab 3",
     description:
       "A beginner friendly workshop to get started with Modern Web Development.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/logo.png",
     status: "upcoming",
     eventType: "event",
-    galleryImages: [
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-    ],
+    galleryImages: ["/logo.png", "/logo.png", "/logo.png", "/logo.png"],
   },
   {
     id: "cloud-computing-seminar",
@@ -144,14 +136,10 @@ export const EVENTS_DATA: Event[] = [
     location: "Seminar Hall 1",
     description:
       "Guest lecture by AWS Solution Architect on the future of cloud.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/logo.png",
     status: "upcoming",
     eventType: "event",
-    galleryImages: [
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-    ],
+    galleryImages: ["/logo.png", "/logo.png", "/logo.png", "/logo.png"],
   },
   {
     id: "open-source-day",
@@ -161,13 +149,9 @@ export const EVENTS_DATA: Event[] = [
     location: "Lab Complex",
     description:
       "Learn how to make your first PR and contribute to real projects.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/logo.png",
     status: "planned",
     eventType: "event",
-    galleryImages: [
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=400",
-    ],
+    galleryImages: ["/logo.png", "/logo.png", "/logo.png", "/logo.png"],
   },
 ];
