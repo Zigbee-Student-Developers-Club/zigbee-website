@@ -1,14 +1,21 @@
 import React from "react";
 
-import OurHistory from "@/components/OurHistory/OurHistory";
-import MeetTheTeam from "@/components/Team/MeetTheTeam";
+import { Team, About as AboutComponent } from "@/components/AboutTeam";
+import { PageHeader } from "@/components/commons";
 
 const About = () => {
   return (
-    <div className="space-y-6">
-      <OurHistory />
-      <MeetTheTeam />
-    </div>
+    <>
+      <PageHeader
+        // backgroundImage="/images/events-bg.jpg"
+        description="The story behind the club and the people who make it happen."
+        title="About Zigbee"
+      />
+      <div className="px-10">
+        <AboutComponent />
+        <Team />
+      </div>
+    </>
   );
 };
 

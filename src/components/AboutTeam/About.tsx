@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-const OurHistory = () => {
+const About = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-4 items-center justify-center p-4">
-      <div className="relative w-full h-80 hidden lg:block mb-4">
+    <div className="flex flex-col md:flex-row gap-4 items-center justify-center px-4 py-8">
+      <div className="relative w-full h-80 hidden lg:block mb-4 mr-4">
         <Image
           fill
           alt="Meeting Image"
@@ -12,7 +12,7 @@ const OurHistory = () => {
           src="/about.jpg"
         />
       </div>
-      <div className="flex flex-col space-y-6">
+      <div className="flex flex-col space-y-5">
         <div>
           <span className="px-3 py-1 text-xs font-bold bg-yellow-100 text-yellow-700 rounded-md">
             OUR HISTORY
@@ -52,4 +52,4 @@ const OurHistory = () => {
   );
 };
 
-export default OurHistory;
+export default About;
