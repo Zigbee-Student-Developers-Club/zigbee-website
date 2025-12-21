@@ -5,7 +5,7 @@ import { EventCard, EVENTS_DATA } from "@/components/events";
 
 const Events = () => {
   return (
-    <>
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       <PageHeader
         description="From hackathons to hands-on coding sessions, explore what's happening at Zigbee."
         title="Events & Workshops"
@@ -15,7 +15,7 @@ const Events = () => {
           <EventCard event={event} key={event.id} />
         ))}
       </div>
-    </>
+    </main>
   );
 };
 

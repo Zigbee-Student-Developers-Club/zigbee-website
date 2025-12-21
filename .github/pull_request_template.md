@@ -8,7 +8,8 @@ Please delete options that are not relevant.
 
 - [ ] Bug fix (non-breaking change)
 - [ ] New feature (non-breaking change)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Breaking change (fix or feature that would cause existing functionality to
+      not work as expected)
 - [ ] Documentation update
 - [ ] Refactor / Code cleanup
 
@@ -34,5 +35,5 @@ Please delete options that are not relevant.
 
 ### Additional Context / Notes
 
-Add any other context about the PR here.
-E.g., implementation choices, known issues, or references to discussion.
+Add any other context about the PR here. E.g., implementation choices, known
+issues, or references to discussion.

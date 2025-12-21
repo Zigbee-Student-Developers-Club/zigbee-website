@@ -52,7 +52,7 @@ const LoginForm = () => {
 
           <div className="space-y-4">
             <Button
-              className="bg-black w-full text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 rounded-lg shadow-md px-6 py-3 font-semibold transition-all duration-200"
+              className="bg-gradient-to-r from-purple-100 via-blue-100 to-indigo-100 w-full text-purple-700 hover:from-purple-200 hover:via-blue-200 hover:to-indigo-200 rounded-lg shadow-md hover:shadow-lg px-6 py-3 font-semibold transition-all duration-200 transform hover:scale-105 border border-purple-200"
               disabled={loading}
               type="submit"
             >

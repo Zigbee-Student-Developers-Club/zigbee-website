@@ -27,6 +27,7 @@ interface NavItemsProps {
   items: { name: string; link: string }[];
   className?: string;
   onItemClick?: () => void;
+  activePath?: string;
 }
 
 interface MobileNavProps {
@@ -112,7 +113,12 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
   );
 };
 
-export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
+export const NavItems = ({
+  items,
+  className,
+  onItemClick,
+  activePath,
+}: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
@@ -123,28 +129,43 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       )}
       onMouseLeave={() => setHovered(null)}
     >
-      {items.map((item, idx) => (
-        <motion.a
-          className="relative px-4 py-2 text-neutral-600 hover:text-black dark:text-neutral-300"
-          href={item.link}
-          key={idx}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.96 }}
-          onClick={onItemClick}
-          onMouseEnter={() => setHovered(idx)}
-        >
-          {hovered === idx && (
-            <motion.div
-              className="absolute inset-0 rounded-full bg-gray-200 dark:bg-neutral-800"
-              layoutId="hovered"
-              transition={{ damping: 25, stiffness: 300, type: "spring" }}
-            />
-          )}
-          <span className="relative z-20 font-bold text-[17px]">
-            {item.name}
-          </span>
-        </motion.a>
-      ))}
+      {items.map((item, idx) => {
+        const isActive = activePath === item.link;
+
+        return (
+          <motion.a
+            href={item.link}
+            key={idx}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.96 }}
+            className={`relative px-4 py-2 ${
+              isActive
+                ? "text-purple-700 font-bold"
+                : "text-neutral-600 hover:text-black dark:text-neutral-300"
+            }`}
+            onClick={onItemClick}
+            onMouseEnter={() => setHovered(idx)}
+          >
+            {isActive && (
+              <motion.div
+                className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-100 to-blue-100"
+                layoutId="active"
+                transition={{ damping: 25, stiffness: 300, type: "spring" }}
+              />
+            )}
+            {hovered === idx && !isActive && (
+              <motion.div
+                className="absolute inset-0 rounded-full bg-gray-200 dark:bg-neutral-800"
+                layoutId="hovered"
+                transition={{ damping: 25, stiffness: 300, type: "spring" }}
+              />
+            )}
+            <span className="relative z-20 font-bold text-[17px]">
+              {item.name}
+            </span>
+          </motion.a>
+        );
+      })}
     </motion.div>
   );
 };
@@ -255,8 +276,9 @@ export const NavbarButton = <T extends React.ElementType = "a">({
   const Component = as || "a";
 
   const variants = {
-    dark: "bg-black text-white dark:bg-white dark:text-black",
-    primary: "bg-white text-black dark:bg-neutral-800 dark:text-white",
+    dark: "bg-gradient-to-r from-purple-100 via-blue-100 to-indigo-100 text-purple-700 hover:from-purple-200 hover:via-blue-200 hover:to-indigo-200 shadow-md hover:shadow-lg border border-purple-200",
+    primary:
+      "bg-white text-purple-700 border-2 border-purple-200 hover:bg-gradient-to-r hover:from-purple-50 hover:via-blue-50 hover:to-indigo-50 hover:border-purple-300 shadow-md hover:shadow-lg",
   };
 
   return (

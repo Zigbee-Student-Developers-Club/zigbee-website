@@ -5,7 +5,7 @@ import MagazinesComponent from "@/components/magazines";
 
 const Magazines = () => {
   return (
-    <>
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       <PageHeader
         backgroundImage="/images/magazines-bg.jpg"
         description="Our annual publication featuring student articles, club achievements, and tech trends."
@@ -14,7 +14,7 @@ const Magazines = () => {
       <div className="p-5 md:px-10">
         <MagazinesComponent />
       </div>
-    </>
+    </main>
   );
 };
 
