@@ -1,5 +1,5 @@
-import Cta from "./Cta";
+import Cta from "./cta";
 import Features from "./Features";
-import Hero from "./Hero";
+import Hero from "./hero";
 
 export { Features, Cta, Hero };

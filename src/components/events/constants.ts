@@ -38,6 +38,91 @@ export interface Event {
 
 export const EVENTS_DATA: Event[] = [
   {
+    id: "aptitude-dsa-2025",
+    slug: "aptitude-dsa-2025",
+    title: "Aptitude + DSA 2025",
+    date: "2025",
+    location: "MCA Department, OUTR",
+    description:
+      "Individual coding competition testing aptitude and data structures knowledge.",
+    image: "/logo.png",
+    status: "upcoming",
+    eventType: "workshop",
+    competitionType: "individual",
+    // winners: [
+    //   {
+    //     name: "Prabodh Kumar Panda",
+    //     position: "1st",
+    //     year: "2024",
+    //     image:
+    //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565795/1750871291320_aizgzj.png",
+    //   },
+    //   {
+    //     name: "Abinash Nayak",
+    //     position: "2nd",
+    //     year: "2024",
+    //     image:
+    //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565704/Screenshot_2025-09-22_at_11.58.08_PM_d7ekb8.png",
+    //   },
+    //   {
+    //     name: "Ananya Swain",
+    //     position: "3rd",
+    //     year: "2024",
+    //     image:
+    //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565640/1719476592706_xsjps0.jpg",
+    //   },
+    // ],
+    // galleryImages: [
+    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151837/WhatsApp_Image_2024-12-25_at_12.32.39_ef6f02a1_kot1n2.jpg",
+    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.32.37_ec768427_v3eoso.webp",
+    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151091/WhatsApp_Image_2024-12-25_at_12.54.10_3a35c09d_cnkdtw.webp",
+    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.54.08_4d9caa93_thdbj0.webp",
+    // ],
+  },
+  {
+    id: "mini-hackathon-2025",
+    slug: "mini-hackathon-2025",
+    title: "Mini Hackathon 2025",
+    date: "2025",
+    location: "A-302, OUTR",
+    description:
+      "72-hour coding hackathon where teams built innovative solutions to real-world problems.",
+    image: "/logo.png",
+    status: "upcoming",
+    eventType: "workshop",
+    competitionType: "team",
+    // teamWinners: {
+    //   winner: {
+    //     teamName: "Team SafeHaven",
+    //     members: [
+    //       "Prabodh Kumar Panda",
+    //       "Rudra Prakash Parida",
+    //       "Ashutosh Prusty",
+    //       "Jayashree Praharaj",
+    //     ],
+    //     image:
+    //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565064/WhatsApp_Image_2025-09-22_at_22.49.26_tgcusb.jpg",
+    //   },
+    //   runnersUp: {
+    //     teamName: "Team Heart2Hand",
+    //     members: [
+    //       "Manas Kumar Pradhan",
+    //       "Udayakara Sahoo",
+    //       "Abinash Nayak",
+    //       "Monalisa Rout",
+    //     ],
+    //     image:
+    //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565064/WhatsApp_Image_2025-09-22_at_22.49.26_1_xd3rlm.jpg",
+    //   },
+    // },
+    // galleryImages: [
+    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151837/WhatsApp_Image_2024-12-25_at_12.32.39_ef6f02a1_kot1n2.jpg",
+    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.32.37_ec768427_v3eoso.webp",
+    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151091/WhatsApp_Image_2024-12-25_at_12.54.10_3a35c09d_cnkdtw.webp",
+    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.54.08_4d9caa93_thdbj0.webp",
+    // ],
+  },
+  {
     id: "aptitude-dsa-2024",
     slug: "aptitude-dsa-2024",
     title: "Aptitude + DSA 2024",
