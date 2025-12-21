@@ -21,14 +21,16 @@ export interface FeatureCardProps {
 export const features = [
   {
     icon: Presentation,
+    image: "/workshop.png",
     title: "Technical Workshops",
     description:
-      "An open space with shared knowledge for all our members to work on their creative projects.",
+      "Hands-on, instructor-led workshops focused on real-world technologies, problem-solving, and practical skill development.",
   },
   {
     icon: Coffee,
-    title: "Community Pod",
+    image: "/community.png",
+    title: "Community & Alumni Support",
     description:
-      "A space to take a break and relax on a bunch of comfy pillows for all the members to use.",
+      "A collaborative network where members and alumni connect, mentor, share experiences, and support each other’s growth.",
   },
 ];

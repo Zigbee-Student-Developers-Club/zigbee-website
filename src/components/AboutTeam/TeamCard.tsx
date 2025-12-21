@@ -1,25 +1,26 @@
-import Image from "next/image";
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 
+import { getInitials } from "@/utils";
+
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+
 import { TeamMemberProps } from "./constants";
 
-const TeamCard: React.FC<TeamMemberProps> = ({
-  name,
-  batch,
-  imageSrc,
-  linkedIn,
-}) => {
+const TeamCard: React.FC<TeamMemberProps> = ({ name, batch, linkedIn }) => {
   return (
     <div className="bg-white border border-purple-200 rounded-xl p-6 flex flex-col items-center text-center w-56 hover:border-purple-400 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/30 transform hover:-translate-y-2">
-      <div className="relative w-24 h-24 mb-4 ring-2 ring-purple-300 rounded-full overflow-hidden shadow-lg">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 opacity-10" />
-        <Image
-          fill
-          alt={`${name}'s profile`}
-          className="object-cover rounded-full relative z-10"
-          src={imageSrc}
-        />
+      <div className="relative">
+        <Avatar className="h-20 w-20 overflow-hidden rounded-full ring-4 ring-white transition-all duration-300 group-hover:ring-cyan-400 xs:h-24 xs:w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+          <AvatarImage
+            alt={name}
+            className="h-full w-full object-cover object-center"
+            // src={imageSrc}
+          />
+          <AvatarFallback className="flex h-full w-full items-center justify-center rounded-full border-4 border-white bg-gradient-to-br from-blue-100 to-purple-100 text-base font-bold text-gray-700 xs:text-lg sm:text-xl md:text-2xl">
+            {getInitials(name)}
+          </AvatarFallback>
+        </Avatar>
       </div>
       <h3 className="text-slate-900 font-bold text-lg mb-1">{name}</h3>
       <p className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent font-semibold text-xs mb-4 tracking-wider">

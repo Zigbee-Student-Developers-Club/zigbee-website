@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Text } from "@/components/ui/text";
 import { cn } from "@/lib/utils";
+import { getInitials } from "@/utils";
 
 interface AlumDataProp {
   name: string;
@@ -19,15 +20,6 @@ const Card = ({
   linkedinURL = "",
   position = "",
 }: AlumDataProp) => {
-  const getInitials = (fullName: string) => {
-    const parts = fullName.trim().toUpperCase().split(" ");
-    if (parts.length >= 2) {
-      return parts[0].charAt(0) + parts[1].charAt(0);
-    }
-
-    return parts[0].charAt(0);
-  };
-
   return (
     <div className="group h-full rounded-xl bg-gradient-to-br from-cyan-100 to-cyan-200 p-4 text-center capitalize shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-5 md:p-6">
       <div className="flex h-full flex-col items-center justify-between">

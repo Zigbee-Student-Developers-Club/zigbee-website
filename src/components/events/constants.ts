@@ -38,14 +38,58 @@ export interface Event {
 
 export const EVENTS_DATA: Event[] = [
   {
-    id: "code-wars-2023",
-    slug: "code-wars-2023",
-    title: "Code Wars 2023",
-    date: "OCT 15-16, 2023",
-    location: "Auditorium",
+    id: "aptitude-dsa-2024",
+    slug: "aptitude-dsa-2024",
+    title: "Aptitude + DSA 2024",
+    date: "2024",
+    location: "MCA Department, OUTR",
     description:
-      "Our flagship 24-hour coding battle. Over 50 teams participated from across the state.",
-    image: "/logo.png",
+      "Individual coding competition testing aptitude and data structures knowledge.",
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151837/WhatsApp_Image_2024-12-25_at_12.32.39_ef6f02a1_kot1n2.jpg",
+    status: "past",
+    eventType: "workshop",
+    competitionType: "individual",
+    winners: [
+      {
+        name: "Prabodh Kumar Panda",
+        position: "1st",
+        year: "2024",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565795/1750871291320_aizgzj.png",
+      },
+      {
+        name: "Abinash Nayak",
+        position: "2nd",
+        year: "2024",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565704/Screenshot_2025-09-22_at_11.58.08_PM_d7ekb8.png",
+      },
+      {
+        name: "Ananya Swain",
+        position: "3rd",
+        year: "2024",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565640/1719476592706_xsjps0.jpg",
+      },
+    ],
+    galleryImages: [
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151837/WhatsApp_Image_2024-12-25_at_12.32.39_ef6f02a1_kot1n2.jpg",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.32.37_ec768427_v3eoso.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151091/WhatsApp_Image_2024-12-25_at_12.54.10_3a35c09d_cnkdtw.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.54.08_4d9caa93_thdbj0.webp",
+    ],
+  },
+  {
+    id: "mini-hackathon-2024",
+    slug: "mini-hackathon-2024",
+    title: "Mini Hackathon 2024",
+    date: "2024",
+    location: "A-302, OUTR",
+    description:
+      "72-hour coding hackathon where teams built innovative solutions to real-world problems.",
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151837/WhatsApp_Image_2024-12-25_at_12.32.39_ef6f02a1_kot1n2.jpg",
     status: "past",
     eventType: "workshop",
     competitionType: "team",
@@ -54,11 +98,12 @@ export const EVENTS_DATA: Event[] = [
         teamName: "Team SafeHaven",
         members: [
           "Prabodh Kumar Panda",
-          "Rudra Prakash Panda",
+          "Rudra Prakash Parida",
           "Ashutosh Prusty",
           "Jayashree Praharaj",
         ],
-        image: "/logo.png",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565064/WhatsApp_Image_2025-09-22_at_22.49.26_tgcusb.jpg",
       },
       runnersUp: {
         teamName: "Team Heart2Hand",
@@ -68,90 +113,191 @@ export const EVENTS_DATA: Event[] = [
           "Abinash Nayak",
           "Monalisa Rout",
         ],
-        image: "/logo.png",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565064/WhatsApp_Image_2025-09-22_at_22.49.26_1_xd3rlm.jpg",
       },
     },
     galleryImages: [
-      "/logo.png",
-      "/logo.png",
-      "/logo.png",
-      "/logo.png",
-      "/logo.png",
-      "/logo.png",
-      "/logo.png",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151837/WhatsApp_Image_2024-12-25_at_12.32.39_ef6f02a1_kot1n2.jpg",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.32.37_ec768427_v3eoso.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151091/WhatsApp_Image_2024-12-25_at_12.54.10_3a35c09d_cnkdtw.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.54.08_4d9caa93_thdbj0.webp",
     ],
   },
   {
-    id: "aptitude-dsa-2024",
-    slug: "aptitude-dsa-2024",
-    title: "Aptitude + DSA 2024",
-    date: "MAR 20, 2024",
-    location: "Computer Lab 1",
+    id: "aptitude-dsa-2023",
+    slug: "aptitude-dsa-2023",
+    title: "Aptitude + DSA 2023",
+    date: "2023",
+    location: "MCA Department, OUTR",
     description:
       "Individual coding competition testing aptitude and data structures knowledge.",
-    image: "/logo.png",
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/codewars3.a3487541_osrppu.webp",
     status: "past",
     eventType: "workshop",
     competitionType: "individual",
     winners: [
       {
-        name: "Prabodh Kumar Panda",
+        name: "Babita",
         position: "1st",
-        year: "2024",
-        image: "/logo.png",
+        year: "2023",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735222476/WhatsApp_Image_2024-12-26_at_16.10.57_68e20c6e_mxk7kt.webp",
       },
       {
-        name: "Abinash Nayak",
+        name: "Pankaj",
         position: "2nd",
-        year: "2024",
-        image: "/logo.png",
+        year: "2023",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735222464/IMG_20230912_202435_ctfkfu.webp",
       },
       {
-        name: "Ananya Swain",
+        name: "Satyabrata",
         position: "3rd",
-        year: "2024",
-        image: "/logo.png",
+        year: "2023",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735222464/20230117_222217_skfeh0.webp",
       },
     ],
-    galleryImages: ["/logo.png", "/logo.png", "/logo.png", "/logo.png"],
+    galleryImages: [
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/codewars3.a3487541_osrppu.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/codewars2.80feba04_m06z65.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143820/MediaAssets/q5zdujirz6c6glstvuag.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735146004/codewars2023-4_fajy3f.webp",
+    ],
   },
   {
-    id: "reactjs-bootcamp",
-    slug: "reactjs-bootcamp",
-    title: "ReactJS Bootcamp",
-    date: "NOV 12, 2023",
-    location: "Computer Lab 3",
+    id: "web-war-2023",
+    slug: "web-war-2023",
+    title: "Web War 2023",
+    date: "2023",
+    location: "MCA Department, OUTR",
     description:
-      "A beginner friendly workshop to get started with Modern Web Development.",
-    image: "/logo.png",
-    status: "upcoming",
-    eventType: "event",
-    galleryImages: ["/logo.png", "/logo.png", "/logo.png", "/logo.png"],
+      "Individual web development competition to build the best website in limited time.",
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/codewars3.a3487541_osrppu.webp",
+    status: "past",
+    eventType: "workshop",
+    competitionType: "individual",
+    winners: [
+      {
+        name: "Sriram",
+        position: "Winner",
+        year: "2023",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735222467/IMG_20241226_024625_yfhzco.webp",
+      },
+      {
+        name: "Bhubanesh",
+        position: "Runners up",
+        year: "2023",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735222465/WhatsApp_Image_2024-09-22_at_20.10.35_e50cdb70_htijqz.webp",
+      },
+    ],
+    galleryImages: [
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/codewars3.a3487541_osrppu.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/codewars2.80feba04_m06z65.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143820/MediaAssets/q5zdujirz6c6glstvuag.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735146004/codewars2023-4_fajy3f.webp",
+    ],
   },
   {
-    id: "cloud-computing-seminar",
-    slug: "cloud-computing-seminar",
-    title: "Cloud Computing Seminar",
-    date: "DEC 05, 2023",
-    location: "Seminar Hall 1",
+    id: "0CKf6oKEBKeuxicJooVK",
+    slug: "cloud-application-development-salesforce-2022",
+    title: "Cloud Application with Salesforce Platform",
+    date: "NOV 28, 2022",
+    location: "A-301, OUTR, Bhubaneswar",
     description:
-      "Guest lecture by AWS Solution Architect on the future of cloud.",
-    image: "/logo.png",
-    status: "upcoming",
+      "Guest lecture on Cloud Application Development with Salesforce Platform",
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143536/salesforce_tmguqd.webp",
+    status: "past",
     eventType: "event",
-    galleryImages: ["/logo.png", "/logo.png", "/logo.png", "/logo.png"],
+    winners: [
+      {
+        name: "Debasis Jena",
+        year: "2011",
+        role: "Tech Lead - Dubai Multi Commodities Center",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143536/salesforce_tmguqd.webp",
+      },
+    ],
+    galleryImages: [],
   },
   {
-    id: "open-source-day",
-    slug: "open-source-day",
-    title: "Open Source Day",
-    date: "JAN 20, 2024",
-    location: "Lab Complex",
+    id: "2ysEy46NHHJShQoHmO45",
+    slug: "alumni-meet-tathya-2024",
+    title: "Alumni Meet - Tathya 2024",
+    date: "DEC 28, 2024",
+    location: "D-402, OUTR, Bhubaneswar",
     description:
-      "Learn how to make your first PR and contribute to real projects.",
-    image: "/logo.png",
-    status: "planned",
+      "Annual alumni meet bringing together past students to network and share experiences.",
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735237706/WhatsApp_Image_2024-12-26_at_16.47.00_830c411a_jbxdsy.jpg",
+    status: "past",
     eventType: "event",
-    galleryImages: ["/logo.png", "/logo.png", "/logo.png", "/logo.png"],
+    galleryImages: [],
+  },
+  {
+    id: "FPEEHm6eTaPxV9mG5cQu",
+    slug: "game-development-unity-3d-2023",
+    title: "Game Development with Unity 3D",
+    date: "JAN 24, 2023",
+    location: "A-301, OUTR, Bhubaneswar",
+    description:
+      "Workshop on Game Development with Unity 3D by Mallik Ebadat, Game Developer at Amgo Games.",
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143024/game_development_with_unity_3d_vnmizb.webp",
+    status: "past",
+    eventType: "event",
+    winners: [
+      {
+        name: "Mallik Ebadat",
+        year: "2020",
+        role: "Game Developer - Amgo Games",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143024/game_development_with_unity_3d_vnmizb.webp",
+      },
+    ],
+    galleryImages: [],
+  },
+  {
+    id: "kga6OVX5hGUpMYkpdvRg",
+    slug: "alumni-connect-2023",
+    title: "Alumni Connect",
+    date: "JUL 16, 2023",
+    location: "OUTR Auditorium, Bhubaneswar",
+    description:
+      "Alumni networking event featuring successful graduates from Apple Inc, 8x8, and Amazon sharing their industry experiences.",
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
+    status: "past",
+    eventType: "event",
+    winners: [
+      {
+        name: "Supriya Sinha",
+        year: "2006",
+        role: "Software Engineer - Apple Inc",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
+      },
+      {
+        name: "Tanmay Padhi",
+        year: "2006",
+        role: "Software Engineer - 8x8",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
+      },
+      {
+        name: "Manas R. Mohanty (B.Tech)",
+        year: "2006",
+        role: "Software Engineer - Amazon",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
+      },
+    ],
+    galleryImages: [],
   },
 ];

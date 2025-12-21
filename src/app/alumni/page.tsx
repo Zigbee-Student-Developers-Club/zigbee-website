@@ -10,7 +10,7 @@ const Alumni = () => {
   const searchParams = useSearchParams();
   const yearParam = searchParams.get("year");
 
-  const endYear = new Date().getFullYear() + 2;
+  const endYear = new Date().getFullYear();
   const [selectedYear, setSelectedYear] = useState<string>(
     yearParam || endYear.toString()
   );

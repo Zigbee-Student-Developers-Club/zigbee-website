@@ -11,7 +11,6 @@ import {
 import Image from "next/image";
 import React from "react";
 
-import RatingBadge from "./RatingBadge";
 import StatCard from "./StatCard";
 
 interface HeroSectionProps {
@@ -28,7 +27,7 @@ interface StatData {
 const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
   const stats: StatData[] = [
     { value: "+500", label: "Active Members", icon: Users },
-    { value: "50+", label: "Yearly Events", icon: Calendar },
+    { value: "10+", label: "Yearly Events", icon: Calendar },
     { value: "120+", label: "Alumni Network", icon: Award },
   ];
 
@@ -72,10 +71,10 @@ const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
                 of MCA Department, OUTR
               </span>
             </h1>
-
+            {/*
             <RatingBadge rating={4.8} reviewCount={400} />
 
-            {/* <Link href={routes.auth.signup}>
+            <Link href={routes.auth.signup}>
               <button className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 Join Our Community
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 import routes from "@/routes";
 
@@ -40,7 +40,7 @@ export const footerItemLinks = [
     value: [
       { label: "About Us", href: routes.about },
       { label: "Our Team", href: routes.about },
-      { label: "Join Us", href: routes.auth.login },
+      // { label: "Join Us", href: routes.auth.login },
     ],
   },
   {
@@ -49,17 +49,35 @@ export const footerItemLinks = [
       { label: "Events & workshops", href: routes.events },
       { label: "Resources", href: routes.resources },
       { label: "Alumni", href: routes.alumni },
+      { label: "Codewars", href: routes.events },
     ],
   },
 ];
 
 export const socialLinks = [
-  { label: "LinkedIn", href: "https://linkedin.com", icon: FaLinkedin },
-  { label: "Instagram", href: "https://instagram.com", icon: FaInstagram },
-  { label: "GitHub", href: "https://github.com", icon: FaGithub },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/zigbeecetb",
+    icon: FaLinkedin,
+  },
+  {
+    label: "Twitter / X",
+    href: "https://twitter.com/zigbeecetb",
+    icon: FaTwitter,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/zigbee.outr",
+    icon: FaInstagram,
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/Zigbee-Student-Developers-Club",
+    icon: FaGithub,
+  },
 ];
 
 export const contactInfo = [
-  { label: "Email", value: "zigbee@outr.ac.in" },
-  { label: "Location", value: "Student Activity Center" },
+  { label: "Email", value: "admin@zigbeeoutr.in" },
+  { label: "Location", value: "Tech Surfer, MCA Department, OUTR" },
 ];
