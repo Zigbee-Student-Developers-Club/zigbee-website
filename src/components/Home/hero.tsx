@@ -5,17 +5,12 @@ import {
   Zap,
   Calendar,
   Award,
-  ArrowRight,
   Sparkles,
   LucideIcon,
 } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
-import routes from "@/routes";
-
-import RatingBadge from "./RatingBadge";
 import StatCard from "./StatCard";
 
 interface HeroSectionProps {
@@ -32,7 +27,7 @@ interface StatData {
 const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
   const stats: StatData[] = [
     { value: "+500", label: "Active Members", icon: Users },
-    { value: "50+", label: "Yearly Events", icon: Calendar },
+    { value: "10+", label: "Yearly Events", icon: Calendar },
     { value: "120+", label: "Alumni Network", icon: Award },
   ];
 
@@ -76,7 +71,7 @@ const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
                 of MCA Department, OUTR
               </span>
             </h1>
-
+            {/*
             <RatingBadge rating={4.8} reviewCount={400} />
 
             <Link href={routes.auth.signup}>
@@ -84,7 +79,7 @@ const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
                 Join Our Community
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Right Content - Hero Image with Stats */}

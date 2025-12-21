@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -24,10 +23,9 @@ const Cta: React.FC = () => {
             their skills in our creative tech community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={routes.auth.signup}>
-              <button className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
-                Get Started Today
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <Link href={routes.events}>
+              <button className="cursor-pointer px-8 py-4 bg-white text-purple-600 border-2 border-purple-200 rounded-full font-semibold hover:bg-purple-50 hover:border-purple-300 transition-all duration-300 shadow-md hover:shadow-lg">
+                Check out latest magazine
               </button>
             </Link>
             <Link href={routes.events}>
