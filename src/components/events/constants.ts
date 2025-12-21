@@ -45,8 +45,9 @@ export const EVENTS_DATA: Event[] = [
     location: "MCA Department, OUTR",
     description:
       "Individual coding competition testing aptitude and data structures knowledge.",
-    image: "/logo.png",
-    status: "upcoming",
+    image:
+      "https://media.licdn.com/dms/image/v2/D5622AQFo6iXuqZl_QQ/feedshare-shrink_2048_1536/B56ZseNp1gIYAw-/0/1765738455909?e=1767830400&v=beta&t=WTsOzZzb-1-f0hmYeM5IIgdul68bJpNBSCblV2IS86Q",
+    status: "past",
     eventType: "workshop",
     competitionType: "individual",
     // winners: [
@@ -72,12 +73,11 @@ export const EVENTS_DATA: Event[] = [
     //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565640/1719476592706_xsjps0.jpg",
     //   },
     // ],
-    // galleryImages: [
-    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151837/WhatsApp_Image_2024-12-25_at_12.32.39_ef6f02a1_kot1n2.jpg",
-    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.32.37_ec768427_v3eoso.webp",
-    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151091/WhatsApp_Image_2024-12-25_at_12.54.10_3a35c09d_cnkdtw.webp",
-    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.54.08_4d9caa93_thdbj0.webp",
-    // ],
+    galleryImages: [
+      "https://media.licdn.com/dms/image/v2/D5622AQFo6iXuqZl_QQ/feedshare-shrink_2048_1536/B56ZseNp1gIYAw-/0/1765738455909?e=1767830400&v=beta&t=WTsOzZzb-1-f0hmYeM5IIgdul68bJpNBSCblV2IS86Q",
+      "https://media.licdn.com/dms/image/v2/D5622AQHKTvsGbQ9FLg/feedshare-shrink_2048_1536/B56ZseNp1mGkAw-/0/1765738456254?e=1767830400&v=beta&t=VaAYKA9yxsCKOmRexY4G-VTG52cDZ8JUZGnMc3FkL1A",
+      "https://media.licdn.com/dms/image/v2/D5622AQGyRFkYI34fdg/feedshare-shrink_1280/B56ZseNp1kKEAs-/0/1765738456855?e=1767830400&v=beta&t=c6lCYL8_lKUalzXZEf1bWTYFRMffMVeJ9c4TSkC98mY",
+    ],
   },
   {
     id: "mini-hackathon-2025",
@@ -87,8 +87,9 @@ export const EVENTS_DATA: Event[] = [
     location: "A-302, OUTR",
     description:
       "72-hour coding hackathon where teams built innovative solutions to real-world problems.",
-    image: "/logo.png",
-    status: "upcoming",
+    image:
+      "https://media.licdn.com/dms/image/v2/D5622AQHzr_246tuQbg/feedshare-shrink_2048_1536/B56ZsePnEMKQAw-/0/1765738969295?e=1767830400&v=beta&t=kSReZWRvRjbEHZeLhmfnzZbLdzo8FcMm6UTzUb3MGB0",
+    status: "past",
     eventType: "workshop",
     competitionType: "team",
     // teamWinners: {
@@ -115,12 +116,11 @@ export const EVENTS_DATA: Event[] = [
     //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565064/WhatsApp_Image_2025-09-22_at_22.49.26_1_xd3rlm.jpg",
     //   },
     // },
-    // galleryImages: [
-    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151837/WhatsApp_Image_2024-12-25_at_12.32.39_ef6f02a1_kot1n2.jpg",
-    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.32.37_ec768427_v3eoso.webp",
-    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151091/WhatsApp_Image_2024-12-25_at_12.54.10_3a35c09d_cnkdtw.webp",
-    //   "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/WhatsApp_Image_2024-12-25_at_12.54.08_4d9caa93_thdbj0.webp",
-    // ],
+    galleryImages: [
+      "https://media.licdn.com/dms/image/v2/D5622AQGb36pQ224_xQ/feedshare-shrink_2048_1536/B56ZsePnEBJoAw-/0/1765738968686?e=1767830400&v=beta&t=Aby9xTN3pp0JIxsnCuATD5QRw_U_8IzbgskWyGoj7cI",
+      "https://media.licdn.com/dms/image/v2/D5622AQHbnCFVf97laQ/feedshare-shrink_2048_1536/B56ZsePnEMG8Aw-/0/1765738969279?e=1767830400&v=beta&t=GE-SsIHB3iXPAZ3B9FRp8aHgwuruHHi-Z9odPtab2_U",
+      "https://media.licdn.com/dms/image/v2/D5622AQHzr_246tuQbg/feedshare-shrink_2048_1536/B56ZsePnEMKQAw-/0/1765738969295?e=1767830400&v=beta&t=kSReZWRvRjbEHZeLhmfnzZbLdzo8FcMm6UTzUb3MGB0",
+    ],
   },
   {
     id: "aptitude-dsa-2024",
@@ -174,7 +174,7 @@ export const EVENTS_DATA: Event[] = [
     description:
       "72-hour coding hackathon where teams built innovative solutions to real-world problems.",
     image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151837/WhatsApp_Image_2024-12-25_at_12.32.39_ef6f02a1_kot1n2.jpg",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151091/WhatsApp_Image_2024-12-25_at_12.54.10_3a35c09d_cnkdtw.webp",
     status: "past",
     eventType: "workshop",
     competitionType: "team",
@@ -261,7 +261,7 @@ export const EVENTS_DATA: Event[] = [
     description:
       "Individual web development competition to build the best website in limited time.",
     image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735151090/codewars3.a3487541_osrppu.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143820/MediaAssets/q5zdujirz6c6glstvuag.webp",
     status: "past",
     eventType: "workshop",
     competitionType: "individual",

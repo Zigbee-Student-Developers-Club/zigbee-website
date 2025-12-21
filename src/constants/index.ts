@@ -39,7 +39,7 @@ export const footerItemLinks = [
     label: "About & Team",
     value: [
       { label: "About Us", href: routes.about },
-      { label: "Our Team", href: routes.about },
+      { label: "Our Team", href: routes.team },
       // { label: "Join Us", href: routes.auth.login },
     ],
   },

@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 import Card from "@/components/Alumni/Card";
@@ -8,10 +9,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 interface AlumniProps {
   selectedYear: string;
-  onYearChange: () => void;
+  // eslint-disable-next-line no-unused-vars
+  setSelectedYear: (year: string) => void;
 }
 
-const Alumni = ({ selectedYear, onYearChange }: AlumniProps) => {
+const Alumni = ({ selectedYear, setSelectedYear }: AlumniProps) => {
+  const router = useRouter();
   const endYear = new Date().getFullYear();
   const startYear = 1996;
 
@@ -20,8 +23,13 @@ const Alumni = ({ selectedYear, onYearChange }: AlumniProps) => {
     label: `Batch ${endYear - i}`,
   }));
 
+  const handleYearChange = (year: string) => {
+    setSelectedYear(year);
+    router.push(`/alumni?year=${year}`, { scroll: false });
+  };
+
   return (
-    <div className="w-full px-4 py-6 sm:px-6 md:py-8">
+    <div className="w-full p-6 sm:px-6 md:py-8">
       {/* Title */}
       <h3 className="mb-6 text-center text-xl font-semibold capitalize sm:mb-8 sm:text-2xl md:text-3xl">
         Batch {selectedYear}
@@ -30,7 +38,7 @@ const Alumni = ({ selectedYear, onYearChange }: AlumniProps) => {
       <Tabs
         className="container mx-auto max-w-[1400px]"
         value={selectedYear}
-        onValueChange={onYearChange}
+        onValueChange={handleYearChange}
       >
         {/* Tabs List */}
         <TabsList className="mb-6 flex w-full flex-wrap justify-start rounded-lg bg-transparent md:mb-8">
@@ -38,7 +46,7 @@ const Alumni = ({ selectedYear, onYearChange }: AlumniProps) => {
             <div className="flex space-x-2 p-3 sm:space-x-3 sm:p-4">
               {batchTabs.map(({ value, label }) => (
                 <TabsTrigger
-                  className="min-w-fit whitespace-nowrap rounded-lg px-3 py-2 text-xs font-medium transition-all duration-200 hover:bg-blue-50 data-[state=active]:bg-blue-500 data-[state=active]:text-white sm:px-4 sm:py-2.5 sm:text-sm dark:hover:bg-teal-900 dark:data-[state=active]:bg-teal-600"
+                  className="min-w-fit cursor-pointer whitespace-nowrap rounded-lg px-3 py-2 text-xs font-medium transition-all duration-200 hover:bg-blue-50 data-[state=active]:bg-blue-500 data-[state=active]:text-white sm:px-4 sm:py-2.5 sm:text-sm dark:hover:bg-teal-900 dark:data-[state=active]:bg-teal-600"
                   key={value}
                   value={value}
                 >

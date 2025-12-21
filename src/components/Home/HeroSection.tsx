@@ -28,7 +28,7 @@ const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
   const stats: StatData[] = [
     { value: "+500", label: "Active Members", icon: Users },
     { value: "10+", label: "Yearly Events", icon: Calendar },
-    { value: "120+", label: "Alumni Network", icon: Award },
+    { value: "400+", label: "Alumni Network", icon: Award },
   ];
 
   return (
