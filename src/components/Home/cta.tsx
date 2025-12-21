@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -16,21 +17,22 @@ const Cta: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 bg-clip-text text-transparent">
-            Ready to Explore?
+            Ready to Start Your Journey?
           </h2>
           <p className="text-xl text-slate-700 max-w-2xl mx-auto">
             Join hundreds of students building amazing projects and growing
             their skills in our creative tech community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={routes.magazines}>
+            <Link href={routes.auth.signup}>
               <button className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
-                View Our Latest Magazine
+                Get Started Today
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </Link>
             <Link href={routes.events}>
               <button className="cursor-pointer px-8 py-4 bg-white text-purple-600 border-2 border-purple-200 rounded-full font-semibold hover:bg-purple-50 hover:border-purple-300 transition-all duration-300 shadow-md hover:shadow-lg">
-                Checkout this year winner
+                View Our Events
               </button>
             </Link>
           </div>
