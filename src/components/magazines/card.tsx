@@ -4,7 +4,7 @@ import React from "react";
 
 import { VolumeProps } from "./constants";
 
-const Card = ({ title, image, year, volume }: VolumeProps) => {
+const Card = ({ title, image, year, volume, downloadUrl }: VolumeProps) => {
   return (
     <div className="group relative overflow-hidden rounded-2xl bg-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 flex flex-col h-full shadow-lg animate-fade-in-up">
       <div className="aspect-[3/4] overflow-hidden bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 flex-shrink-0 relative">
@@ -29,7 +29,7 @@ const Card = ({ title, image, year, volume }: VolumeProps) => {
           <a
             aria-label={`Download ${title}`}
             className="cursor-pointer h-10 w-10 rounded-full flex items-center justify-center border-2 border-purple-300 bg-white hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-600 hover:border-purple-600 transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-lg z-10 relative"
-            href={image}
+            href={downloadUrl}
             rel="noreferrer"
             target="_blank"
           >
