@@ -5,15 +5,11 @@ import {
   Zap,
   Calendar,
   Award,
-  ArrowRight,
   Sparkles,
   LucideIcon,
 } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-
-import routes from "@/routes";
 
 import RatingBadge from "./RatingBadge";
 import StatCard from "./StatCard";
@@ -79,12 +75,12 @@ const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
 
             <RatingBadge rating={4.8} reviewCount={400} />
 
-            <Link href={routes.auth.signup}>
+            {/* <Link href={routes.auth.signup}>
               <button className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 Join Our Community
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Right Content - Hero Image with Stats */}

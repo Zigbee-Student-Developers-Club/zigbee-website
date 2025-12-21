@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "motion/react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import {
@@ -10,13 +10,11 @@ import {
   NavItems,
   MobileNav,
   NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { navItems } from "@/constants";
-import routes from "@/routes";
 
 const container = {
   hidden: { opacity: 0 },
@@ -39,7 +37,6 @@ const mobileItem = {
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
-  const router = useRouter();
   const pathname = usePathname();
 
   useEffect(() => {
@@ -82,7 +79,7 @@ const Header = () => {
               <NavItems activePath={pathname} items={navItems} />
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               animate="visible"
               className="relative z-30"
               initial="hidden"
@@ -93,7 +90,7 @@ const Header = () => {
               <NavbarButton href={routes.auth.signup} variant="dark">
                 Join the club
               </NavbarButton>
-            </motion.div>
+            </motion.div> */}
           </NavBody>
 
           {/* ================= MOBILE NAV ================= */}
@@ -138,7 +135,7 @@ const Header = () => {
                       );
                     })}
 
-                    <motion.div
+                    {/* <motion.div
                       whileHover={{ scale: 1.04 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -152,7 +149,7 @@ const Header = () => {
                       >
                         Join the club
                       </NavbarButton>
-                    </motion.div>
+                    </motion.div> */}
                   </motion.div>
                 </MobileNavMenu>
               )}
