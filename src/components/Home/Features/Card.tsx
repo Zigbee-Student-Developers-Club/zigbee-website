@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { FeatureCardProps } from "./constants";
 
 const Card: React.FC<FeatureCardProps> = ({
-  feature: { title, icon: Icon, description, image, gradient },
+  feature: { title, icon: Icon, description, image },
   delay,
   isVisible,
 }) => {
@@ -21,7 +21,7 @@ const Card: React.FC<FeatureCardProps> = ({
         {/* Image Section */}
         <div className="relative h-64 overflow-hidden">
           <div
-            className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-80 mix-blend-multiply transition-opacity duration-500 ${isHovered ? "opacity-60" : "opacity-80"}`}
+            className={`absolute inset-0 bg-gradient-to-br opacity-80 mix-blend-multiply transition-opacity duration-500 ${isHovered ? "opacity-60" : "opacity-80"}`}
           />
           <Image
             fill

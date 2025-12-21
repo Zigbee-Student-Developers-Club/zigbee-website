@@ -9,7 +9,6 @@ export interface FeatureData {
   title: string;
   description: string;
   image: string;
-  gradient: string;
 }
 
 export interface FeatureCardProps {

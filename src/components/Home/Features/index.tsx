@@ -22,8 +22,8 @@ const Features: React.FC<FeaturesSectionProps> = ({ isVisible }) => {
           {features.map((feature, idx) => (
             <FeatureCard
               delay={idx * 200}
-              key={feature.title}
               {...{ feature, isVisible }}
+              key={feature.title}
             />
           ))}
         </div>

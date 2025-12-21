@@ -53,14 +53,15 @@ const Alumni = ({ selectedYear, onYearChange }: AlumniProps) => {
         {/* Tabs Content */}
         <div className="min-h-[400px]">
           <TabsContent className="mt-8" value={selectedYear}>
-            {alumniData[selectedYear as keyof typeof alumniData] &&
-            alumniData[selectedYear as keyof typeof alumniData].length > 0 ? (
+            {alumniData[selectedYear as unknown as keyof typeof alumniData] &&
+            alumniData[selectedYear as unknown as keyof typeof alumniData]
+              .length > 0 ? (
               <div className="grid grid-cols-1 gap-4 xs:grid-cols-2 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6 xl:grid-cols-5">
-                {alumniData[selectedYear as keyof typeof alumniData].map(
-                  (alum, index) => (
-                    <Card key={index} {...alum} />
-                  )
-                )}
+                {alumniData[
+                  selectedYear as unknown as keyof typeof alumniData
+                ].map((alum, index) => (
+                  <Card key={index} {...alum} />
+                ))}
               </div>
             ) : (
               <div className="flex min-h-[300px] items-center justify-center">
