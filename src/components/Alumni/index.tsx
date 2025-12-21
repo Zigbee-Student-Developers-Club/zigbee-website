@@ -12,7 +12,7 @@ interface AlumniProps {
 }
 
 const Alumni = ({ selectedYear, onYearChange }: AlumniProps) => {
-  const endYear = new Date().getFullYear() + 2;
+  const endYear = new Date().getFullYear();
   const startYear = 1996;
 
   const batchTabs = Array.from({ length: endYear - startYear + 1 }, (_, i) => ({
