@@ -6,7 +6,7 @@ import { features, FeaturesSectionProps } from "./constants";
 const Features: React.FC<FeaturesSectionProps> = ({ isVisible }) => {
   return (
     <section className="py-12 md:py-20 relative">
-      <div className="container w-full md:w-5xl mx-auto px-4">
+      <div className="container w-full md:w-4xl mx-auto px-4">
         <div
           className={`text-center mb-12 transform transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
         >
