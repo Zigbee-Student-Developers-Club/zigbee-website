@@ -40,7 +40,7 @@ export const footerItemLinks = [
     value: [
       { label: "About Us", href: routes.about },
       { label: "Our Team", href: routes.about },
-      { label: "Join Us", href: routes.auth.login },
+      // { label: "Join Us", href: routes.auth.login },
     ],
   },
   {
@@ -49,6 +49,7 @@ export const footerItemLinks = [
       { label: "Events & workshops", href: routes.events },
       { label: "Resources", href: routes.resources },
       { label: "Alumni", href: routes.alumni },
+      { label: "Codewars", href: routes.events },
     ],
   },
 ];
