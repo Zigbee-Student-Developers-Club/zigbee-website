@@ -25,7 +25,7 @@ const Cta: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href={routes.magazines}>
               <button className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
-                View Our Latest Events
+                View Our Latest Magazine
               </button>
             </Link>
             <Link href={routes.events}>
