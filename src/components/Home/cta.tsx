@@ -23,7 +23,7 @@ const Cta: React.FC = () => {
             their skills in our creative tech community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={routes.events}>
+            <Link href={routes.magazines}>
               <button className="cursor-pointer px-8 py-4 bg-white text-purple-600 border-2 border-purple-200 rounded-full font-semibold hover:bg-purple-50 hover:border-purple-300 transition-all duration-300 shadow-md hover:shadow-lg">
                 Check out latest magazine
               </button>
