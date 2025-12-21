@@ -38,6 +38,23 @@ export interface Event {
 
 export const EVENTS_DATA: Event[] = [
   {
+    id: "2ysEy46NHHJShQoHere335gfdgO45",
+    slug: "alumni-meet-tathya-2025",
+    title: "Alumni Meet - Tathya 2025",
+    date: "DEC 21, 2025",
+    location: "Sky Lantern, Near SUM Hospital, Bhubaneswar",
+    description:
+      "Annual alumni meet bringing together past students to network and share experiences.",
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766334433/WhatsApp_Image_2025-12-12_at_00.30.27_iptjxn.jpg",
+    status: "past",
+    eventType: "event",
+    galleryImages: [
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766333190/tathya_2025_sxxzel.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766334587/tathya_25-2_cgzlpj.jpg",
+    ],
+  },
+  {
     id: "aptitude-dsa-2025",
     slug: "aptitude-dsa-2025",
     title: "Aptitude + DSA 2025",
@@ -323,7 +340,12 @@ export const EVENTS_DATA: Event[] = [
       "https://res.cloudinary.com/dljszrwl0/image/upload/v1735237706/WhatsApp_Image_2024-12-26_at_16.47.00_830c411a_jbxdsy.jpg",
     status: "past",
     eventType: "event",
-    galleryImages: [],
+    galleryImages: [
+      "https://media.licdn.com/dms/image/v2/D4D22AQGAVLH1fpo1Pg/feedshare-shrink_2048_1536/B4DZQYL.GNHMAo-/0/1735572583790?e=1767830400&v=beta&t=GzGrTVpgtcxMY5fJfl6cswpCBa1D_7QHuZApebsAews",
+      "https://media.licdn.com/dms/image/v2/D4D22AQFPoYdKyb5vJg/feedshare-shrink_2048_1536/B4DZQYL.FVHwAs-/0/1735572582968?e=1767830400&v=beta&t=mKLvRTeW5qSKUhBXrtHUc7lll18hxbMLgA4CRNpweN4",
+      "https://media.licdn.com/dms/image/v2/D4D22AQEzqVVTjxQU1g/feedshare-shrink_2048_1536/B4DZQYL.GdHwAo-/0/1735572581924?e=1767830400&v=beta&t=meOcowAWg8UMLdrgoEh2nfnc2Dw3ZQHVT5y-Z50oGj8",
+      "https://media.licdn.com/dms/image/v2/D4D22AQE9vgtcUsSIIA/feedshare-shrink_2048_1536/B4DZQYL.H8HMAo-/0/1735572584762?e=1767830400&v=beta&t=PjVy4IT6abQodLVZgNGooVcCTbR8rvl1IpPv9Ap7U_I",
+    ],
   },
   {
     id: "FPEEHm6eTaPxV9mG5cQu",
