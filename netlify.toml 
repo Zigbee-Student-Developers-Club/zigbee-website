@@ -1,0 +1,5 @@
+[build]
+  command = "yarn build"
+  publish = "out" # or leave default for plugin-managed output
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
