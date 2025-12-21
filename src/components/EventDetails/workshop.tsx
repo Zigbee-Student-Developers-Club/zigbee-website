@@ -13,9 +13,9 @@ const Workshop = (event: Event) => {
   const { competitionType, teamWinners, winners, galleryImages } = event;
 
   return (
-    <main className="min-h-screen bg-background container mx-auto p-10 py-12">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 container mx-auto p-10 py-12">
       <Link
-        className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8"
+        className="inline-flex items-center gap-2 text-slate-700 hover:text-purple-700 mb-8 transition-colors font-medium"
         href={routes.events}
       >
         <ArrowLeft className="h-4 w-4" />
