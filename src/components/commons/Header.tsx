@@ -1,8 +1,9 @@
 "use client";
 
 import { motion, AnimatePresence } from "motion/react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import {
   Navbar,
@@ -24,11 +25,6 @@ const container = {
   },
 };
 
-const item = {
-  hidden: { opacity: 0, y: -10 },
-  visible: { opacity: 1, y: 0 },
-};
-
 const mobileItem = {
   hidden: { opacity: 0, x: -20 },
   visible: { opacity: 1, x: 0 },
@@ -36,48 +32,30 @@ const mobileItem = {
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const MotionLink = motion(Link);
 
   return (
     <>
       {/* Background wrapper for header area */}
-      <div className="fixed inset-x-0 top-0 h-24 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 pointer-events-none z-30">
-        {/* Animated Background Elements - only render on client */}
-        {isMounted && (
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-0 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob" />
-            <div className="absolute top-0 right-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000" />
-            <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000" />
-          </div>
-        )}
+      <div className="fixed inset-x-0 top-0 h-22 pointer-events-none z-30">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-0 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob" />
+          <div className="absolute top-0 right-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000" />
+          <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000" />
+        </div>
       </div>
-
-      <motion.div
-        animate={{ y: 0, opacity: 1 }}
-        className="relative w-full"
-        initial={{ y: -50, opacity: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
+      <div className="relative w-full">
         <Navbar>
           {/* ================= DESKTOP NAV ================= */}
           <NavBody>
-            <motion.div animate="visible" initial="hidden" variants={item}>
+            <div>
               <NavbarLogo />
-            </motion.div>
+            </div>
 
-            <motion.div
-              animate="visible"
-              className="flex-1"
-              initial="hidden"
-              variants={container}
-            >
+            <div className="flex-1">
               <NavItems activePath={pathname} items={navItems} />
-            </motion.div>
+            </div>
 
             {/* <motion.div
               animate="visible"
@@ -117,7 +95,7 @@ const Header = () => {
                       const isActive = pathname === itemData.link;
 
                       return (
-                        <motion.a
+                        <MotionLink
                           href={itemData.link}
                           key={idx}
                           variants={mobileItem}
@@ -131,7 +109,7 @@ const Header = () => {
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
                           {itemData.name}
-                        </motion.a>
+                        </MotionLink>
                       );
                     })}
 
@@ -156,7 +134,7 @@ const Header = () => {
             </AnimatePresence>
           </MobileNav>
         </Navbar>
-      </motion.div>
+      </div>
     </>
   );
 };

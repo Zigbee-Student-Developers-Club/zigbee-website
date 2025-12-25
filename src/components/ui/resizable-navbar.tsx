@@ -72,12 +72,9 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   });
 
   return (
-    <motion.div
-      animate={{ opacity: 1, y: 0 }}
+    <div
       className={cn("fixed inset-x-0 top-2 z-40 w-full", className)}
-      initial={{ opacity: 0, y: -40 }}
       ref={ref}
-      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       {React.Children.map(children, child => {
         if (!React.isValidElement(child)) return child;
@@ -88,7 +85,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
           { visible }
         );
       })}
-    </motion.div>
+    </div>
   );
 };
 
@@ -123,9 +120,9 @@ export const NavItems = ({
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <motion.div
+    <div
       className={cn(
-        "hidden flex-1 items-center justify-center space-x-2 lg:flex",
+        "hidden flex-1 items-center justify-end space-x-2 lg:flex",
         className
       )}
       onMouseLeave={() => setHovered(null)}
@@ -134,11 +131,9 @@ export const NavItems = ({
         const isActive = activePath === item.link;
 
         return (
-          <motion.a
+          <Link
             href={item.link}
             key={idx}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.96 }}
             className={`relative px-4 py-2 ${
               isActive
                 ? "text-purple-700 font-bold"
@@ -148,26 +143,18 @@ export const NavItems = ({
             onMouseEnter={() => setHovered(idx)}
           >
             {isActive && (
-              <motion.div
-                className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-100 to-blue-100"
-                layoutId="active"
-                transition={{ damping: 25, stiffness: 300, type: "spring" }}
-              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-100 to-blue-100" />
             )}
             {hovered === idx && !isActive && (
-              <motion.div
-                className="absolute inset-0 rounded-full bg-gray-200 dark:bg-neutral-800"
-                layoutId="hovered"
-                transition={{ damping: 25, stiffness: 300, type: "spring" }}
-              />
+              <div className="absolute inset-0 rounded-full bg-gray-200 dark:bg-neutral-800" />
             )}
             <span className="relative z-20 font-bold text-[17px]">
               {item.name}
             </span>
-          </motion.a>
+          </Link>
         );
       })}
-    </motion.div>
+    </div>
   );
 };
 
@@ -184,7 +171,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
       }}
       className={cn(
         "relative z-50 mx-auto flex w-full flex-col lg:hidden",
-        visible && "bg-white/80 dark:bg-neutral-950/80",
+        visible && "bg-white/80 dark:bg-neutral-950/80 rounded-lg",
         className
       )}
     >
@@ -252,7 +239,7 @@ export const MobileNavToggle = ({
 /* ---------------- LOGO + BUTTON ---------------- */
 
 export const NavbarLogo = () => (
-  <motion.div whileHover={{ scale: 1.04 }}>
+  <div>
     <Link className="flex items-center gap-2 " href="/">
       <Image
         alt="Zigbee Logo"
@@ -263,7 +250,7 @@ export const NavbarLogo = () => (
       />
       <span className="font-bold">Zigbee Student Developers' Club</span>
     </Link>
-  </motion.div>
+  </div>
 );
 
 export const NavbarButton = <T extends React.ElementType = "a">({
