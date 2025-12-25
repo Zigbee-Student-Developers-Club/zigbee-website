@@ -1,3 +1,4 @@
+import { Mail } from "lucide-react";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 import routes from "@/routes";
@@ -39,7 +40,7 @@ export const footerItemLinks = [
     label: "About & Team",
     value: [
       { label: "About Us", href: routes.about },
-      { label: "Our Team", href: routes.about },
+      { label: "Our Team", href: routes.team },
       // { label: "Join Us", href: routes.auth.login },
     ],
   },
@@ -75,9 +76,17 @@ export const socialLinks = [
     href: "https://github.com/Zigbee-Student-Developers-Club",
     icon: FaGithub,
   },
+  {
+    label: "Mail",
+    href: "mailto:zigbeecetb@gmail.com",
+    icon: Mail,
+  },
 ];
 
 export const contactInfo = [
-  { label: "Email", value: "admin@zigbeeoutr.in" },
+  {
+    label: "Email",
+    value: "zigbeecetb@gmail.com",
+  },
   { label: "Location", value: "Tech Surfer, MCA Department, OUTR" },
 ];

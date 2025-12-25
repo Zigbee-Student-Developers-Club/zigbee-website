@@ -28,7 +28,7 @@ const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
   const stats: StatData[] = [
     { value: "+500", label: "Active Members", icon: Users },
     { value: "10+", label: "Yearly Events", icon: Calendar },
-    { value: "120+", label: "Alumni Network", icon: Award },
+    { value: "400+", label: "Alumni Network", icon: Award },
   ];
 
   return (
@@ -89,12 +89,12 @@ const Hero: React.FC<HeroSectionProps> = ({ isVisible }) => {
             <div className="relative w-full aspect-square max-w-lg mx-auto">
               {/* Main Image Container */}
               <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700" />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-200 via-blue-400 to-indigo-200" />
                 <Image
                   fill
                   alt="Tech community collaborating"
                   className="w-full h-full object-cover mix-blend-overlay opacity-80"
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                  src="https://res.cloudinary.com/dljszrwl0/image/upload/v1766652045/DSC_0614_sr0mta.webp"
                 />
                 {/* Overlay Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/50 to-transparent" />

@@ -5,6 +5,7 @@ const routes = {
   magazines: "/magazines",
   alumni: "/alumni",
   about: "/about",
+  team: "/about#team",
   auth: {
     login: "/login",
     signup: "/sign-up",

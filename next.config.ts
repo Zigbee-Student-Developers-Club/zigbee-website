@@ -33,6 +33,11 @@ const nextConfig: NextConfig = {
         hostname: 'zigbee-testing.netlify.app',
         pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'media.licdn.com',
+        pathname: '**',
+      },
     ]
   },
 };
