@@ -141,7 +141,7 @@ const Individual = ({ winners = [] }: Partial<Event>) => {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white hover:text-purple-400 transition-colors z-10 bg-black/50 rounded-full p-3 hover:bg-black/70 hover:scale-110 transition-all duration-300"
+            className="absolute top-4 right-4 text-white hover:text-purple-400 z-10 bg-black/50 rounded-full p-3 hover:bg-black/70 hover:scale-110 transition-all duration-300"
             onClick={() => setSelectedImage(null)}
           >
             <X className="h-6 w-6" />

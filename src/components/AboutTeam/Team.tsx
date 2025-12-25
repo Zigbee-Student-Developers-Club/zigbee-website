@@ -11,7 +11,7 @@ const Team = () => {
         <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000" />
       </div>
 
-      <div className="relative z-10">
+      <div className="relative z-10" id="team">
         <h2 className="text-4xl font-bold mb-2 bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 bg-clip-text text-transparent">
           Meet the Team
         </h2>

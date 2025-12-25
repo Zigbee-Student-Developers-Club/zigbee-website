@@ -9,6 +9,16 @@ export interface VolumeProps {
 
 export const magazineData: VolumeProps[] = [
   {
+    id: "afljdsflkerewrrjlrqer",
+    title: "Reflections 5.0",
+    year: 2025,
+    volume: 5,
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766654269/reflection_5.0_e9q6gw.webp",
+    downloadUrl:
+      "https://drive.google.com/file/d/1mZfbLe1yexz8a16PpsF4GouvFGOTCw6I/view?usp=drivesdk",
+  },
+  {
     id: "maOjKD0DWYeqbMzAw2D3",
     title: "Reflections 4.0",
     year: 2024,
