@@ -4,7 +4,7 @@ export interface VolumeProps {
   year: number;
   volume: number;
   image: string;
-  downloadUrl?: string;
+  downloadUrl: string;
 }
 
 export const magazineData: VolumeProps[] = [
