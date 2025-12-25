@@ -41,7 +41,7 @@ export const EVENTS_DATA: Event[] = [
     id: "2ysEy46NHHJShQoHere335gfdgO45",
     slug: "alumni-meet-tathya-2025",
     title: "Alumni Meet - Tathya 2025",
-    date: "DEC 21, 2025",
+    date: "21st December, 2025",
     location: "Sky Lantern, Near SUM Hospital, Bhubaneswar",
     description:
       "Annual alumni meet bringing together past students to network and share experiences.",
@@ -50,15 +50,34 @@ export const EVENTS_DATA: Event[] = [
     status: "past",
     eventType: "event",
     galleryImages: [
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766333190/tathya_2025_sxxzel.webp",
       "https://res.cloudinary.com/dljszrwl0/image/upload/v1766334587/tathya_25-2_cgzlpj.jpg",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652032/DSC_0210_m73f28.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652030/DSC_0208_gukmee.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652021/DSC_0264_xbejnl.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652032/DSC_0317_okclwd.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652032/DSC_0287_yccyhg.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766653064/DSC_0310_kwpyap.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766653064/DSC_0342_upmktd.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766653064/DSC_0281_asnbjx.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766653061/DSC_0395_s7li1h.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652033/DSC_0413_kzp7hd.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652045/DSC_0604_chd5hs.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652037/DSC_0500_pxwncx.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652048/DSC_0554_rdrjnf.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652039/DSC_0525_li88zp.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652045/DSC_0614_sr0mta.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652047/DSC_0649_qynbab.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652045/DSC_0638_nf8umz.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652045/DSC_0614_sr0mta.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652047/DSC_0833_dgf85u.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766333190/tathya_2025_sxxzel.webp",
     ],
   },
   {
     id: "aptitude-dsa-2025",
     slug: "aptitude-dsa-2025",
     title: "Aptitude + DSA 2025",
-    date: "2025",
+    date: "24th November, 2025",
     location: "MCA Department, OUTR",
     description:
       "Individual coding competition testing aptitude and data structures knowledge.",
@@ -67,40 +86,43 @@ export const EVENTS_DATA: Event[] = [
     status: "past",
     eventType: "workshop",
     competitionType: "individual",
-    // winners: [
-    //   {
-    //     name: "Prabodh Kumar Panda",
-    //     position: "1st",
-    //     year: "2024",
-    //     image:
-    //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565795/1750871291320_aizgzj.png",
-    //   },
-    //   {
-    //     name: "Abinash Nayak",
-    //     position: "2nd",
-    //     year: "2024",
-    //     image:
-    //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565704/Screenshot_2025-09-22_at_11.58.08_PM_d7ekb8.png",
-    //   },
-    //   {
-    //     name: "Ananya Swain",
-    //     position: "3rd",
-    //     year: "2024",
-    //     image:
-    //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565640/1719476592706_xsjps0.jpg",
-    //   },
-    // ],
+    winners: [
+      {
+        name: "Subash Chandra Mohanty",
+        position: "1st",
+        year: "2025",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652044/DSC_0439_dityre.webp",
+      },
+      {
+        name: "Satyaranjan Nayak",
+        position: "2nd",
+        year: "2025",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652040/DSC_0435_qll8d4.webp",
+      },
+      {
+        name: "Rimjhim Kumari",
+        position: "3rd",
+        year: "2025",
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652033/DSC_0429_rk6tum.webp",
+      },
+    ],
     galleryImages: [
       "https://media.licdn.com/dms/image/v2/D5622AQFo6iXuqZl_QQ/feedshare-shrink_2048_1536/B56ZseNp1gIYAw-/0/1765738455909?e=1767830400&v=beta&t=WTsOzZzb-1-f0hmYeM5IIgdul68bJpNBSCblV2IS86Q",
       "https://media.licdn.com/dms/image/v2/D5622AQHKTvsGbQ9FLg/feedshare-shrink_2048_1536/B56ZseNp1mGkAw-/0/1765738456254?e=1767830400&v=beta&t=VaAYKA9yxsCKOmRexY4G-VTG52cDZ8JUZGnMc3FkL1A",
       "https://media.licdn.com/dms/image/v2/D5622AQGyRFkYI34fdg/feedshare-shrink_1280/B56ZseNp1kKEAs-/0/1765738456855?e=1767830400&v=beta&t=c6lCYL8_lKUalzXZEf1bWTYFRMffMVeJ9c4TSkC98mY",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652044/DSC_0439_dityre.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652040/DSC_0435_qll8d4.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652033/DSC_0429_rk6tum.webp",
     ],
   },
   {
     id: "mini-hackathon-2025",
     slug: "mini-hackathon-2025",
     title: "Mini Hackathon 2025",
-    date: "2025",
+    date: "29th November, 2025",
     location: "A-302, OUTR",
     description:
       "72-hour coding hackathon where teams built innovative solutions to real-world problems.",
@@ -109,34 +131,36 @@ export const EVENTS_DATA: Event[] = [
     status: "past",
     eventType: "workshop",
     competitionType: "team",
-    // teamWinners: {
-    //   winner: {
-    //     teamName: "Team SafeHaven",
-    //     members: [
-    //       "Prabodh Kumar Panda",
-    //       "Rudra Prakash Parida",
-    //       "Ashutosh Prusty",
-    //       "Jayashree Praharaj",
-    //     ],
-    //     image:
-    //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565064/WhatsApp_Image_2025-09-22_at_22.49.26_tgcusb.jpg",
-    //   },
-    //   runnersUp: {
-    //     teamName: "Team Heart2Hand",
-    //     members: [
-    //       "Manas Kumar Pradhan",
-    //       "Udayakara Sahoo",
-    //       "Abinash Nayak",
-    //       "Monalisa Rout",
-    //     ],
-    //     image:
-    //       "https://res.cloudinary.com/dljszrwl0/image/upload/v1758565064/WhatsApp_Image_2025-09-22_at_22.49.26_1_xd3rlm.jpg",
-    //   },
-    // },
+    teamWinners: {
+      winner: {
+        teamName: "Team Haven",
+        members: [
+          "Subash Chandra Mohanty",
+          "Ramakanta Behera",
+          "Gudu Mallik",
+          "Smrutipriya Nanda",
+        ],
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652042/DSC_0457_hrlb89.webp",
+      },
+      runnersUp: {
+        teamName: "Team S.H.I.E.L.D",
+        members: [
+          "Asutosh Sahoo",
+          "Gayatri Panigrahi",
+          "Rahul samal",
+          "Sambit Kumar Behera",
+        ],
+        image:
+          "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652048/DSC_0449_gdcga9.webp",
+      },
+    },
     galleryImages: [
       "https://media.licdn.com/dms/image/v2/D5622AQGb36pQ224_xQ/feedshare-shrink_2048_1536/B56ZsePnEBJoAw-/0/1765738968686?e=1767830400&v=beta&t=Aby9xTN3pp0JIxsnCuATD5QRw_U_8IzbgskWyGoj7cI",
       "https://media.licdn.com/dms/image/v2/D5622AQHbnCFVf97laQ/feedshare-shrink_2048_1536/B56ZsePnEMG8Aw-/0/1765738969279?e=1767830400&v=beta&t=GE-SsIHB3iXPAZ3B9FRp8aHgwuruHHi-Z9odPtab2_U",
       "https://media.licdn.com/dms/image/v2/D5622AQHzr_246tuQbg/feedshare-shrink_2048_1536/B56ZsePnEMKQAw-/0/1765738969295?e=1767830400&v=beta&t=kSReZWRvRjbEHZeLhmfnzZbLdzo8FcMm6UTzUb3MGB0",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652042/DSC_0457_hrlb89.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652048/DSC_0449_gdcga9.webp",
     ],
   },
   {

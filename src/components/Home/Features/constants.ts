@@ -29,7 +29,7 @@ export const features = [
   {
     icon: Coffee,
     image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766333190/tathya_2025_sxxzel.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652045/DSC_0614_sr0mta.webp",
     title: "Community & Alumni Support",
     description:
       "A collaborative network where members and alumni connect, mentor, share experiences, and support each other’s growth.",
