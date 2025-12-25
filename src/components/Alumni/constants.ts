@@ -385,7 +385,7 @@ export const alumniData: Record<string, Alumni[]> = {
     },
     {
       name: "M Aurobindo singh Sardar",
-      position: "PV",
+      position: "PC",
       imgURL:
         "https://media.licdn.com/dms/image/D4D03AQEX2iPvHy9rAw/profile-displayphoto-shrink_800_800/0/1702210511218?e=1707955200&v=beta&t=jB8_bMV_BzE_HbiG96vMQQS7oYM-N3r4NzZOQf5TzhQ",
       linkedinURL: "https://www.linkedin.com/in/imaurobindo/",
