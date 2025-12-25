@@ -70,7 +70,7 @@ export const EVENTS_DATA: Event[] = [
       "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652045/DSC_0638_nf8umz.webp",
       "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652045/DSC_0614_sr0mta.webp",
       "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652047/DSC_0833_dgf85u.webp",
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766333190/tathya_2025_sxxzel.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766659762/DSC_0511_ryurwe.webp",
     ],
   },
   {
@@ -161,6 +161,25 @@ export const EVENTS_DATA: Event[] = [
       "https://media.licdn.com/dms/image/v2/D5622AQHzr_246tuQbg/feedshare-shrink_2048_1536/B56ZsePnEMKQAw-/0/1765738969295?e=1767830400&v=beta&t=kSReZWRvRjbEHZeLhmfnzZbLdzo8FcMm6UTzUb3MGB0",
       "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652042/DSC_0457_hrlb89.webp",
       "https://res.cloudinary.com/dljszrwl0/image/upload/v1766652048/DSC_0449_gdcga9.webp",
+    ],
+  },
+  {
+    id: "2ysEy46NHHJShQoHmO45",
+    slug: "alumni-meet-tathya-2024",
+    title: "Alumni Meet - Tathya 2024",
+    date: "DEC 28, 2024",
+    location: "D-402, OUTR, Bhubaneswar",
+    description:
+      "Annual alumni meet bringing together past students to network and share experiences.",
+    image:
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735237706/WhatsApp_Image_2024-12-26_at_16.47.00_830c411a_jbxdsy.jpg",
+    status: "past",
+    eventType: "event",
+    galleryImages: [
+      "https://media.licdn.com/dms/image/v2/D4D22AQGAVLH1fpo1Pg/feedshare-shrink_2048_1536/B4DZQYL.GNHMAo-/0/1735572583790?e=1767830400&v=beta&t=GzGrTVpgtcxMY5fJfl6cswpCBa1D_7QHuZApebsAews",
+      "https://media.licdn.com/dms/image/v2/D4D22AQFPoYdKyb5vJg/feedshare-shrink_2048_1536/B4DZQYL.FVHwAs-/0/1735572582968?e=1767830400&v=beta&t=mKLvRTeW5qSKUhBXrtHUc7lll18hxbMLgA4CRNpweN4",
+      "https://media.licdn.com/dms/image/v2/D4D22AQEzqVVTjxQU1g/feedshare-shrink_2048_1536/B4DZQYL.GdHwAo-/0/1735572581924?e=1767830400&v=beta&t=meOcowAWg8UMLdrgoEh2nfnc2Dw3ZQHVT5y-Z50oGj8",
+      "https://media.licdn.com/dms/image/v2/D4D22AQE9vgtcUsSIIA/feedshare-shrink_2048_1536/B4DZQYL.H8HMAo-/0/1735572584762?e=1767830400&v=beta&t=PjVy4IT6abQodLVZgNGooVcCTbR8rvl1IpPv9Ap7U_I",
     ],
   },
   {
@@ -352,83 +371,64 @@ export const EVENTS_DATA: Event[] = [
     ],
     galleryImages: [],
   },
-  {
-    id: "2ysEy46NHHJShQoHmO45",
-    slug: "alumni-meet-tathya-2024",
-    title: "Alumni Meet - Tathya 2024",
-    date: "DEC 28, 2024",
-    location: "D-402, OUTR, Bhubaneswar",
-    description:
-      "Annual alumni meet bringing together past students to network and share experiences.",
-    image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735237706/WhatsApp_Image_2024-12-26_at_16.47.00_830c411a_jbxdsy.jpg",
-    status: "past",
-    eventType: "event",
-    galleryImages: [
-      "https://media.licdn.com/dms/image/v2/D4D22AQGAVLH1fpo1Pg/feedshare-shrink_2048_1536/B4DZQYL.GNHMAo-/0/1735572583790?e=1767830400&v=beta&t=GzGrTVpgtcxMY5fJfl6cswpCBa1D_7QHuZApebsAews",
-      "https://media.licdn.com/dms/image/v2/D4D22AQFPoYdKyb5vJg/feedshare-shrink_2048_1536/B4DZQYL.FVHwAs-/0/1735572582968?e=1767830400&v=beta&t=mKLvRTeW5qSKUhBXrtHUc7lll18hxbMLgA4CRNpweN4",
-      "https://media.licdn.com/dms/image/v2/D4D22AQEzqVVTjxQU1g/feedshare-shrink_2048_1536/B4DZQYL.GdHwAo-/0/1735572581924?e=1767830400&v=beta&t=meOcowAWg8UMLdrgoEh2nfnc2Dw3ZQHVT5y-Z50oGj8",
-      "https://media.licdn.com/dms/image/v2/D4D22AQE9vgtcUsSIIA/feedshare-shrink_2048_1536/B4DZQYL.H8HMAo-/0/1735572584762?e=1767830400&v=beta&t=PjVy4IT6abQodLVZgNGooVcCTbR8rvl1IpPv9Ap7U_I",
-    ],
-  },
-  {
-    id: "FPEEHm6eTaPxV9mG5cQu",
-    slug: "game-development-unity-3d-2023",
-    title: "Game Development with Unity 3D",
-    date: "JAN 24, 2023",
-    location: "A-301, OUTR, Bhubaneswar",
-    description:
-      "Workshop on Game Development with Unity 3D by Mallik Ebadat, Game Developer at Amgo Games.",
-    image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143024/game_development_with_unity_3d_vnmizb.webp",
-    status: "past",
-    eventType: "event",
-    winners: [
-      {
-        name: "Mallik Ebadat",
-        year: "2020",
-        role: "Game Developer - Amgo Games",
-        image:
-          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143024/game_development_with_unity_3d_vnmizb.webp",
-      },
-    ],
-    galleryImages: [],
-  },
-  {
-    id: "kga6OVX5hGUpMYkpdvRg",
-    slug: "alumni-connect-2023",
-    title: "Alumni Connect",
-    date: "JUL 16, 2023",
-    location: "OUTR Auditorium, Bhubaneswar",
-    description:
-      "Alumni networking event featuring successful graduates from Apple Inc, 8x8, and Amazon sharing their industry experiences.",
-    image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
-    status: "past",
-    eventType: "event",
-    winners: [
-      {
-        name: "Supriya Sinha",
-        year: "2006",
-        role: "Software Engineer - Apple Inc",
-        image:
-          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
-      },
-      {
-        name: "Tanmay Padhi",
-        year: "2006",
-        role: "Software Engineer - 8x8",
-        image:
-          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
-      },
-      {
-        name: "Manas R. Mohanty (B.Tech)",
-        year: "2006",
-        role: "Software Engineer - Amazon",
-        image:
-          "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
-      },
-    ],
-    galleryImages: [],
-  },
+  // {
+  //   id: "FPEEHm6eTaPxV9mG5cQu",
+  //   slug: "game-development-unity-3d-2023",
+  //   title: "Game Development with Unity 3D",
+  //   date: "JAN 24, 2023",
+  //   location: "A-301, OUTR, Bhubaneswar",
+  //   description:
+  //     "Workshop on Game Development with Unity 3D by Mallik Ebadat, Game Developer at Amgo Games.",
+  //   image:
+  //     "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143024/game_development_with_unity_3d_vnmizb.webp",
+  //   status: "past",
+  //   eventType: "event",
+  //   winners: [
+  //     {
+  //       name: "Mallik Ebadat",
+  //       year: "2020",
+  //       role: "Game Developer - Amgo Games",
+  //       image:
+  //         "https://res.cloudinary.com/dljszrwl0/image/upload/v1735143024/game_development_with_unity_3d_vnmizb.webp",
+  //     },
+  //   ],
+  //   galleryImages: [],
+  // },
+  // {
+  //   id: "kga6OVX5hGUpMYkpdvRg",
+  //   slug: "alumni-connect-2023",
+  //   title: "Alumni Connect",
+  //   date: "JUL 16, 2023",
+  //   location: "OUTR Auditorium, Bhubaneswar",
+  //   description:
+  //     "Alumni networking event featuring successful graduates from Apple Inc, 8x8, and Amazon sharing their industry experiences.",
+  //   image:
+  //     "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
+  //   status: "past",
+  //   eventType: "event",
+  //   winners: [
+  //     {
+  //       name: "Supriya Sinha",
+  //       year: "2006",
+  //       role: "Software Engineer - Apple Inc",
+  //       image:
+  //         "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
+  //     },
+  //     {
+  //       name: "Tanmay Padhi",
+  //       year: "2006",
+  //       role: "Software Engineer - 8x8",
+  //       image:
+  //         "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
+  //     },
+  //     {
+  //       name: "Manas R. Mohanty (B.Tech)",
+  //       year: "2006",
+  //       role: "Software Engineer - Amazon",
+  //       image:
+  //         "https://res.cloudinary.com/dljszrwl0/image/upload/v1735141719/alumni-connect_wosgem.png",
+  //     },
+  //   ],
+  //   galleryImages: [],
+  // },
 ];
