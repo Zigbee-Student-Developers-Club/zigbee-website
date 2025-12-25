@@ -14,9 +14,9 @@ export const magazineData: VolumeProps[] = [
     year: 2025,
     volume: 5,
     image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766654269/reflection_5.0_e9q6gw.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766684593/reflections-5.0_llntvx.webp",
     downloadUrl:
-      "https://drive.google.com/file/d/1mZfbLe1yexz8a16PpsF4GouvFGOTCw6I/view?usp=drivesdk",
+      "https://drive.google.com/file/d/1NVdJooSRCWgw1UaBt3JTQq7wrs-YNiXP/view",
   },
   {
     id: "maOjKD0DWYeqbMzAw2D3",
@@ -24,9 +24,9 @@ export const magazineData: VolumeProps[] = [
     year: 2024,
     volume: 4,
     image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735491157/WhatsApp_Image_2024-12-29_at_21.43.46_ff767631_zehaxp.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766684536/reflections-4.0_eeapgm.webp",
     downloadUrl:
-      "https://drive.google.com/file/d/1dGbAhTlKc8mOfXva7jAU8LH6MDNLZ2Gw/view?usp=sharing",
+      "https://drive.google.com/file/d/1lqDBRVafrkZqdQmbqDYXAshRpIwCOkm9/view",
   },
   {
     id: "QNe8sTLDG4eqpM6MsicZ",
@@ -34,9 +34,9 @@ export const magazineData: VolumeProps[] = [
     year: 2024,
     volume: 3,
     image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735142496/refraction3.1_mmh1js.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766684527/reflections-3.1_eplkef.webp",
     downloadUrl:
-      "https://drive.google.com/file/d/1yYSh1qFfp2AyJa7BY5H9JWCMPfmqZg6G/view",
+      "https://drive.google.com/file/d/1v-iB31u2nt3BMRFWDcTovcRbwOuoOQ9X/view",
   },
   {
     id: "DDp3XeR611C8scPGWpXI",
@@ -44,9 +44,9 @@ export const magazineData: VolumeProps[] = [
     year: 2023,
     volume: 2,
     image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735140624/reflection2023_hlbevc.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766684549/reflections-2.0_xdr0aa.png",
     downloadUrl:
-      "https://drive.google.com/file/d/1ZJvMnvlvtFDsmyxR_AEfeuUYDL13vW_0/view",
+      "https://drive.google.com/file/d/1M7GmSHEDlB226c0J1BCM4MTqbZVtcRPl/view",
   },
   {
     id: "7pYvnLAshHq2OfpVeF2W",
@@ -54,8 +54,8 @@ export const magazineData: VolumeProps[] = [
     year: 2022,
     volume: 1,
     image:
-      "https://res.cloudinary.com/dljszrwl0/image/upload/v1735140592/reflection2022_yevtbr.webp",
+      "https://res.cloudinary.com/dljszrwl0/image/upload/v1766684539/reflections-1.0_qokudu.png",
     downloadUrl:
-      "https://drive.google.com/file/d/1d4atWmN2TvQE-c5aexGquTB3_Nbh_Rzk/view",
+      "https://drive.google.com/file/d/1mhlBwRql9gA1fkMIjLWwwihHCAiopZZf/view",
   },
 ];
