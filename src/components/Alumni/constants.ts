@@ -206,7 +206,7 @@ export const alumniData: Record<string, Alumni[]> = {
       linkedinURL: "https://www.linkedin.com/in/pradhanbikash/",
     },
     {
-      name: "Biswabhusan Mohanty",
+      name: "Biswabhusan Mohapatra",
       linkedinURL:
         "https://www.linkedin.com/in/biswabhusan-mohapatra-11a47b2b7",
     },
