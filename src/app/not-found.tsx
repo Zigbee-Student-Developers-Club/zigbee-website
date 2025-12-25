@@ -15,6 +15,11 @@ const NotFound = () => {
 export const metadata: Metadata = {
   title:
     "404 Page Not Found | Zigbee Student Developers' Club, OUTR (CETB), Bhubaneswar",
+  description: "The page you're looking for is missing.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default NotFound;
