@@ -9,7 +9,7 @@ interface PageProps {
 }
 
 const AlumniPage = async ({ searchParams }: PageProps) => {
-  const endYear = new Date().getFullYear();
+  const endYear = new Date().getFullYear() + 2;
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
