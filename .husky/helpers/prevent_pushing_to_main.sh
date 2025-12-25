@@ -3,13 +3,13 @@
 prevent_pushing_to_main() {
   current_branch=`git symbolic-ref HEAD`
   current_origin=`git remote`
-  if [ current_origin = "origin" -o "$current_branch" = "refs/heads/master" -o "$current_branch" = "refs/heads/main" ]
+  if [ current_origin = "origin" -o "$current_branch" = "refs/heads/master" -o "$current_branch" = "refs/heads/main" -o "$current_branch" = "refs/heads/production" ]
   then
   cat <<EOT
 --------------------------------------------------------------------------------------
-You are not authorized to push/commit directly to master/main branch in origin remote.
+You are not authorized to push/commit directly to master/main/production branch in origin remote.
 Push from a new branch and make the PR.
-Or if you are 100% sure you want to push/commit to master/main branch,
+Or if you are 100% sure you want to push/commit to master/main/production branch,
 then pass in the optional --no-verify option with the git command.
 Example:
 # Warning: pushing to main is not recommended
