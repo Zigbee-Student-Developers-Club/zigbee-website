@@ -1,15 +1,339 @@
-export const alumniData = {
+type Position = "CR" | "GR" | "PC" | "PV";
+
+export interface Alumni {
+  name: string;
+  position?: Position;
+  linkedinURL?: string;
+  imgURL?: string;
+}
+
+export const alumniData: Record<string, Alumni[]> = {
+  2027: [
+    {
+      name: "Amaresh Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/amaresh-sahoo-5bb012386",
+      position: "CR",
+    },
+    {
+      name: "Amrita Sahu",
+      linkedinURL: "https://www.linkedin.com/in/amrita-sahu-6942ab291",
+    },
+    {
+      name: "Anjali Biswal",
+      linkedinURL: "https://www.linkedin.com/in/anjali-biswal-649b59331",
+    },
+    {
+      name: "Arundhati Pati",
+      linkedinURL: "https://www.linkedin.com/in/arundhati-pati-428177307",
+    },
+    {
+      name: "Asutosh Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/asutoshsahoo",
+    },
+
+    {
+      name: "Biswa Ranjan Mohapatra",
+      linkedinURL:
+        "https://www.linkedin.com/in/biswa-ranjan-mohapatra-726417382",
+    },
+
+    {
+      name: "Debasish Dash",
+      linkedinURL: "https://www.linkedin.com/in/debasish-dash-74b8b4244",
+    },
+    {
+      name: "Deepak Kumar Pradhan",
+      linkedinURL:
+        "https://www.linkedin.com/in/deepak-kumar-pradhan-351630278/",
+    },
+
+    {
+      name: "Gayatri Panigrahi",
+      linkedinURL: "https://www.linkedin.com/in/gayatri-panigrahi-361614365",
+    },
+    {
+      name: "Gudu Mallik",
+      linkedinURL: "https://www.linkedin.com/in/gudu-mallik-108838342",
+    },
+
+    {
+      name: "Jyoti Prakash Samal",
+      linkedinURL: "https://www.linkedin.com/in/jyotiprakashsamal",
+    },
+
+    {
+      name: "Laxmi Narayana Tripathy",
+      linkedinURL:
+        "https://www.linkedin.com/in/laxmi-narayana-tripathy-089378327",
+    },
+    {
+      name: "Lucky Behera",
+      linkedinURL: "https://www.linkedin.com/in/lucky-behera-24a126290",
+    },
+
+    {
+      name: "Madhusudan Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/madhusudan-sahoo-637a3437b",
+    },
+    {
+      name: "Manish Kumar Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/manish-kumar-sahoo-510a8430b",
+    },
+
+    {
+      name: "P Suman Patro",
+      linkedinURL: "https://in.linkedin.com/in/suman-patro-9bb5b4326",
+    },
+    {
+      name: "Praveen Kumar Naik",
+      linkedinURL: "https://www.linkedin.com/in/praveen-k-naik",
+    },
+
+    {
+      name: "Rahul Panda",
+      linkedinURL: "https://www.linkedin.com/in/rahul4349",
+    },
+    {
+      name: "Ramakanta Behera",
+      linkedinURL: "https://www.linkedin.com/in/ramakanta-behera-514187373",
+    },
+    {
+      name: "Rimjhim Kumari",
+      linkedinURL: "https://www.linkedin.com/in/rimjhim-kumari-164501274",
+      position: "PV",
+    },
+    {
+      name: "Rudra Narayan Jena",
+      linkedinURL: "https://www.linkedin.com/in/rudra-narayan-jena",
+      position: "PV",
+    },
+
+    {
+      name: "Sadashiva Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/sadashiva-sahoo-94a535316",
+    },
+    {
+      name: "Sambit Kumar Behera",
+      linkedinURL: "https://www.linkedin.com/in/sambit-kumar-behera-466b87255",
+    },
+    {
+      name: "Sanjib Barik",
+      linkedinURL: "https://www.linkedin.com/in/sanjib-barik",
+    },
+    {
+      name: "Satyaranjan Nayak",
+      linkedinURL: "https://www.linkedin.com/in/satya282",
+    },
+    {
+      name: "Shreeya Pradhan",
+      linkedinURL: "https://www.linkedin.com/in/shreeya-pradhan-b21063266",
+    },
+    {
+      name: "Smrutipriya Nanda",
+      linkedinURL: "https://www.linkedin.com/in/smrutipriya-nanda-37a0b3386",
+    },
+    {
+      name: "Sonali Gupta",
+      linkedinURL: "https://www.linkedin.com/in/sonali-gupta-3556b9379",
+    },
+    {
+      name: "Sonalika Jena",
+      linkedinURL: "https://www.linkedin.com/in/sonalika-jena-a375b1309",
+      position: "GR",
+    },
+    {
+      name: "Subash Chandra Mohanty",
+      linkedinURL: "https://www.linkedin.com/in/subas-mohanty/",
+    },
+    {
+      name: "Sumeet Srivastav",
+      linkedinURL:
+        "https://www.linkedin.com/in/sumeet-sumeet-srivastav-90917638a",
+    },
+    {
+      name: "Suraj Sekhar Samal",
+      linkedinURL: "https://www.linkedin.com/in/suraj-sekhar-samal-4a0787330",
+    },
+    {
+      name: "Swagatika Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/swagatika-sahoo-2aa756347",
+    },
+
+    {
+      name: "Tapan Kumar Hansdah",
+      linkedinURL: "https://www.linkedin.com/in/tapan-hansdah",
+    },
+    {
+      name: "Truptimayee Das",
+      linkedinURL: "https://www.linkedin.com/in/truptimayee-das-4a0539391",
+    },
+  ],
+  2026: [
+    {
+      name: "Abinash Nayak",
+      linkedinURL: "https://www.linkedin.com/in/abinashnayak01",
+    },
+    {
+      name: "Ajay Toppo",
+      linkedinURL: "https://www.linkedin.com/in/ajay-toppo-057a83223",
+    },
+    {
+      name: "Akash Beck",
+      linkedinURL: "https://www.linkedin.com/in/akash-beck-0559b3334",
+    },
+    {
+      name: "Ananya Swain",
+      linkedinURL: "https://www.linkedin.com/in/ananyaswain/",
+    },
+    {
+      name: "Anmol Guria",
+      linkedinURL: "https://www.linkedin.com/in/anmol-guria-b42857333",
+    },
+    {
+      name: "Arpita Das",
+      linkedinURL: "https://www.linkedin.com/in/arpita-das-",
+    },
+    {
+      name: "Ashutosh Prusty",
+      linkedinURL: "https://www.linkedin.com/in/ashutosh-prusty-",
+    },
+    {
+      name: "Barsha Nayak",
+      linkedinURL: "https://www.linkedin.com/in/barshanayak86",
+    },
+    {
+      name: "Bikash Kumar Pradhan",
+      linkedinURL: "https://www.linkedin.com/in/pradhanbikash/",
+    },
+    {
+      name: "Biswabhusan Mohanty",
+      linkedinURL:
+        "https://www.linkedin.com/in/biswabhusan-mohapatra-11a47b2b7",
+    },
+    {
+      name: "Brahmananda Moharana",
+      linkedinURL: "https://www.linkedin.com/in/brahmananda-moharana",
+    },
+    {
+      name: "Gitanjali Mohapatra",
+      linkedinURL: "https://www.linkedin.com/in/gitanjalimohapatra",
+    },
+    {
+      name: "Harekrushna Barik",
+      linkedinURL: "https://www.linkedin.com/in/harekrushna-barik",
+    },
+    {
+      name: "Jayashree Praharaj",
+      linkedinURL: "https://www.linkedin.com/in/jayashree-praharaj",
+    },
+    {
+      name: "Laxmidhar Ojha",
+      linkedinURL: "https://www.linkedin.com/in/laxmidhar-ojha",
+    },
+    {
+      name: "Manas Kumar Pradhan",
+      linkedinURL: "https://www.linkedin.com/in/manask-pradhan",
+    },
+    {
+      name: "Monalisa Rout",
+      linkedinURL: "https://www.linkedin.com/in/monalisa-rout023",
+    },
+    {
+      name: "Nabakishore Swain",
+      linkedinURL: "https://www.linkedin.com/in/nabakishore-swain-9745b8335",
+    },
+    {
+      name: "Prabodh Kumar Panda",
+      linkedinURL: "https://www.linkedin.com/in/prabodhpanda",
+      position: "PV",
+    },
+    {
+      name: "Prativa Nayak",
+      linkedinURL: "https://www.linkedin.com/in/prativa-nayak-8ab9a7334/",
+    },
+    {
+      name: "Pritimaya Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/pritimaya-sahoo/",
+    },
+    {
+      name: "Rafia Firdous",
+      linkedinURL: "https://www.linkedin.com/in/rafia-firdous05",
+    },
+    {
+      name: "Rajesh Kumar Pahadasingh",
+      linkedinURL: "https://www.linkedin.com/in/rajesh-kumar-pahadasingh-",
+    },
+    {
+      name: "Rojaline Sahoo",
+      position: "GR",
+      linkedinURL: "https://www.linkedin.com/in/rojalinesahoo",
+    },
+    {
+      name: "Rudra Praksha Parida",
+      linkedinURL: "https://www.linkedin.com/in/rudra-prakash-parida",
+    },
+    {
+      name: "Rutupurna Swain",
+      linkedinURL: "https://www.linkedin.com/in/rutupurna-swain",
+      position: "PC",
+    },
+    {
+      name: "Sankarshan Sahu",
+      linkedinURL: "https://www.linkedin.com/in/sankarshan636sahu",
+    },
+    {
+      name: "Sapan Kumar Behera",
+      linkedinURL: "https://www.linkedin.com/in/sapan-kumar-b99020331/",
+    },
+    {
+      name: "Shubhendu Maharana",
+      linkedinURL: "https://www.linkedin.com/in/shubhendu-maharana",
+    },
+    {
+      name: "Sitikanta Dash",
+      linkedinURL: "https://www.linkedin.com/in/sitikanta-dash",
+    },
+    {
+      name: "Soumya Ranjan Maharana",
+      linkedinURL: "https://www.linkedin.com/in/maharanasoumyaranjan",
+    },
+    {
+      name: "Soumya Ranjan Panda",
+      linkedinURL: "https://www.linkedin.com/in/soumya000",
+    },
+    {
+      name: "Soumyajit Singh",
+      linkedinURL: "https://www.linkedin.com/in/soumyajit-singh-385a4032a/",
+    },
+    {
+      name: "Subham Kumar Das",
+      linkedinURL: "https://www.linkedin.com/in/subham-kumar-das-/",
+    },
+    {
+      name: "Sunil Kumar Das",
+      linkedinURL: "https://www.linkedin.com/in/sunil-kuumar-das",
+    },
+    {
+      name: "Udayakar Sahoo",
+      position: "CR",
+      linkedinURL: "https://www.linkedin.com/in/udayakarsahoo",
+    },
+    {
+      name: "Umesh Pradhan",
+      linkedinURL: "https://www.linkedin.com/in/umeshpradhan",
+    },
+  ],
   2025: [
     {
       name: "Babita Mohalik",
       imgURL:
-        "https://media.licdn.com/dms/image/D5603AQH_L3OYk4BiEA/profile-displayphoto-shrink_800_800/0/1702212496872?e=1707955200&v=beta&t=MYSrUZ4Tr0oaKI_-KsFzZKNdjzkBYUZ1iMNpqeu_Qww",
+        "https://media.licdn.com/dms/image/v2/D5603AQFOtut8NO9qdA/profile-displayphoto-shrink_800_800/0/1702212496872?e=1707955200&v=beta&t=MYSrUZ4Tr0oaKI_-KsFzZKNdjzkBYUZ1iMNpqeu_Qww",
       linkedinURL: "https://www.linkedin.com/in/babitamohalik/",
     },
     {
       name: "Bhubanesh Maharana",
       imgURL:
-        "https://media.licdn.com/dms/image/D5603AQGcNuWCrVhQhg/profile-displayphoto-shrink_800_800/0/1701962651548?e=1707350400&v=beta&t=YnaXJlBQyaltgIytN3zP7M02Hxa1m8UypSxunl43ZwI",
+        "https://media.licdn.com/dms/image/v2/D5603AQGcNuWCrVhQhg/profile-displayphoto-shrink_800_800/0/1701962651548?e=1707350400&v=beta&t=YnaXJlBQyaltgIytN3zP7M02Hxa1m8UypSxunl43ZwI",
       linkedinURL: "https://www.linkedin.com/in/bhubanesh-maharana",
     },
     {
@@ -652,373 +976,672 @@ export const alumniData = {
   ],
   2022: [
     {
-      name: "DEBABRATA SAHOO",
+      name: "Debabrata Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/debabrata-sahoo-551248209",
     },
     {
-      name: "PINAKI PRIYADARSINI SWAIN",
+      name: "Pinaki Priyadarsini Swain",
+      linkedinURL: "https://www.linkedin.com/in/pinaki-priyadarsini-swain",
+    },
+    { name: "Aftab Ahmed", linkedinURL: "https://www.linkedin.com/in/aftab23" },
+    {
+      name: "Ankita Kiro",
+      linkedinURL: "https://www.linkedin.com/in/ankita-kiro-27bba31ba/",
     },
     {
-      name: "AFTAB AHMED",
+      name: "Anupam Mohanty",
+      linkedinURL: "https://www.linkedin.com/in/an-anupam-/",
     },
     {
-      name: "ANKITA KIRO",
+      name: "Arpita Maharatha",
+      linkedinURL: "https://www.linkedin.com/in/arpita-maharatha-a22196209/",
     },
     {
-      name: "ANUPAM MOHANTY",
+      name: "Ashish Kumar Panda",
+      linkedinURL: "https://www.linkedin.com/in/ashish-kumar-panda-847307216/",
     },
     {
-      name: "ARPITA MAHARATHA",
+      name: "Bibhudendu Dwibedi",
+      linkedinURL: "https://www.linkedin.com/in/bibhudendu-dwibedi-5b162421a/",
     },
     {
-      name: "ASHISH KUMAR PANDA",
+      name: "Biswajit Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/biswajit-sahoo-479192225/",
     },
     {
-      name: "BIBHUDENDU DWIBEDI",
+      name: "Chinmaya Das",
+      linkedinURL: "https://www.linkedin.com/in/chinmaya-das-6619761a9/",
     },
     {
-      name: "BISWAJIT SAHOO",
+      name: "Jagabandhu Mohanta",
+      linkedinURL: "https://www.linkedin.com/in/jagabandhu-mohanta-27662b210/",
     },
     {
-      name: "CHINMAYA DAS",
+      name: "Jharana Perua",
+      linkedinURL: "https://www.linkedin.com/in/jharana-perua-32ab1421a",
     },
     {
-      name: "JAGABANDHU MOHANTA",
+      name: "Jitendra Bisoi",
+      linkedinURL: "https://www.linkedin.com/in/jitendra-bisoi-6b4b38209/",
     },
     {
-      name: "JHARANA PERUA",
+      name: "M V V S S Nikhil",
+      linkedinURL: "https://www.linkedin.com/in/nikhil-muddamsetty",
     },
     {
-      name: "JITENDRA BISOI",
+      name: "Milan Kumar Nayak",
+      linkedinURL: "https://www.linkedin.com/in/milan-nayak-228027208",
     },
     {
-      name: "M V V S S NIKHIL",
+      name: "N Priyajit",
+      linkedinURL: "https://www.linkedin.com/in/n-priyajit",
     },
     {
-      name: "MILAN KUMAR NAYAK",
+      name: "Nikhil Kumar Barik",
+      linkedinURL: "https://www.linkedin.com/in/nerdynikhil",
     },
     {
-      name: "N PRIYAJIT",
-    },
-    {
-      name: "NIKHIL KUMAR BARIK",
-    },
-    {
-      name: "PADMAPANI PATRA",
+      name: "Padmapani Patra",
       position: "CR",
+      linkedinURL: "https://www.linkedin.com/in/padmapani-patra/",
     },
     {
-      name: "PRASANTA KUMAR MURMU",
+      name: "Prasanta Kumar Murmu",
+      linkedinURL: "https://www.linkedin.com/in/prasanta-murmu-a74b111a1/",
     },
     {
-      name: "PREETAM DASH",
+      name: "Preetam Dash",
+      linkedinURL: "https://www.linkedin.com/in/preetam-dash-3a2362215/",
     },
     {
-      name: "R P HITESH BEHERA",
+      name: "Samar Kumar Das",
+      linkedinURL: "https://www.linkedin.com/in/samar-kumar-das-a2b8531a0/",
     },
     {
-      name: "SAMAR KUMAR DAS",
+      name: "Saroj Kumar Piroi",
+      linkedinURL: "https://www.linkedin.com/in/saroj-kumar-piroi-9b37b2202/",
     },
     {
-      name: "SAROJ KUMAR PIROI",
+      name: "Sasanka Sekhar Sahu",
+      linkedinURL: "https://www.linkedin.com/in/sasanka-sahu-95a0271b8",
     },
     {
-      name: "SASANKA SEKHAR SAHU",
+      name: "Subhashree Panda",
+      linkedinURL: "https://www.linkedin.com/in/subhashree-panda-a0a002214/",
     },
     {
-      name: "SUBHASHREE PANDA",
-    },
-    {
-      name: "SUBHASHREE SATAPATHY",
+      name: "Subhashree Satapathy",
       position: "GR",
+      linkedinURL: "https://www.linkedin.com/in/subhashree-satapathy/",
     },
     {
-      name: "SURAJ ROY",
+      name: "Suraj Roy",
       position: "CR",
+      linkedinURL: "https://www.linkedin.com/in/suraj-roy-721729203/",
     },
     {
-      name: "SWETA DASH",
+      name: "Sweta Dash",
+      linkedinURL: "https://www.linkedin.com/in/sweta-dash1999/",
     },
     {
-      name: "UTTAM KUMAR DEY",
+      name: "Uttam Kumar Dey",
+      linkedinURL: "https://www.linkedin.com/in/talk2uttam14/",
     },
     {
-      name: "A. MANISHA PATRO",
+      name: "A. Manisha Patro",
+      linkedinURL: "https://www.linkedin.com/in/a-manisha-patro-9a8024215/",
     },
     {
-      name: "ADITYA KUMAR PATRA",
+      name: "Aditya Kumar Patra",
+      linkedinURL: "https://www.linkedin.com/in/aditya-kumar-81801b1b1",
     },
     {
-      name: "ANWESHA SAHOO",
+      name: "Anwesha Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/anwesha-sahoo-a76b31194/",
     },
     {
-      name: "ARCHANA MISHRA",
+      name: "Arup Kumar Subudhi",
+      linkedinURL: "https://www.linkedin.com/in/arup-kumar-subudhi-2989ba144/",
     },
     {
-      name: "ARUP KUMAR SUBUDHI",
+      name: "Bhagabati Prasad Panda",
+      linkedinURL: "https://www.linkedin.com/in/bhagabati-prasad",
     },
     {
-      name: "BHAGABATI PRASAD PANDA",
+      name: "Bijay Kumar Naik",
+      linkedinURL: "https://www.linkedin.com/in/bijaya-kumar-naik-947b201b3/",
     },
     {
-      name: "BIJAY KUMAR NAIK",
+      name: "Chinmaya Biswal",
+      linkedinURL: "https://www.linkedin.com/in/chinmaya-biswal-56b399195/",
     },
     {
-      name: "CHINMAYA BISWAL",
-    },
-    {
-      name: "GUNU MISHRA",
-    },
-    {
-      name: "JAGDISH SAHOO",
+      name: "Jagdish Sahoo",
       position: "PC",
+      linkedinURL: "https://www.linkedin.com/in/jagdishsahoo/",
     },
     {
-      name: "GUNU MISHRA",
+      name: "Gunu Mishra",
+      linkedinURL: "https://www.linkedin.com/in/gunu-mishra-9a88a41b6/",
     },
     {
-      name: "LAKSHMI PRASAD DAS",
+      name: "Lalit Kumar Soren",
+      linkedinURL: "https://www.linkedin.com/in/lalitkumarsoren/",
     },
     {
-      name: "LALIT KUMAR SOREN",
+      name: "Lipika Dalai",
+      linkedinURL: "https://www.linkedin.com/in/lipikadalai/",
     },
     {
-      name: "LIPIKA DALAI",
+      name: "Mohammad Sikandar",
+      linkedinURL: "https://www.linkedin.com/in/mohammad-sikandar-124ba8136",
     },
     {
-      name: "MOHAMMAD SIKANDAR",
+      name: "Mrutyunjay Rout",
+      linkedinURL: "https://www.linkedin.com/in/routmj7/",
     },
     {
-      name: "MRUTYUNJAY ROUT",
+      name: "Nishant Singh Rajput",
+      linkedinURL: "https://www.linkedin.com/in/nsr1798/",
     },
     {
-      name: "NISHANT SINGH RAJPUT",
+      name: "Purnendu Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/purnendu-sahoo-72404a28b/",
     },
     {
-      name: "PADMAPANI PATRA",
+      name: "Roshni Rupali Satpathy",
+      linkedinURL: "https://www.linkedin.com/in/roshnisatpathy",
     },
     {
-      name: "PIYUSH KUMAR SAHOO",
+      name: "Rupali Mishra",
+      linkedinURL: "https://www.linkedin.com/in/rupali-mishra99/",
     },
     {
-      name: "PURNENDU SAHOO",
-    },
-    {
-      name: "RASHMI RANJAN SAHOO",
-    },
-    {
-      name: "PURNENDU SAHOO",
-    },
-    {
-      name: "ROSHNI RUPALI SATPATHY",
-    },
-    {
-      name: "RUPALI MISHRA",
-    },
-    {
-      name: "SMITARANI CHOUDHURY",
+      name: "Smitarani Choudhury",
       position: "GR",
+      linkedinURL: "https://www.linkedin.com/in/smitachoudhury/",
     },
     {
-      name: "SMRUTI RANJAN SAHOO",
+      name: "Smruti Ranjan Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/smsahoo1997/",
     },
     {
-      name: "SUDHANSHU BARAL",
+      name: "Sudhanshu Baral",
+      linkedinURL: "https://www.linkedin.com/in/sudhanshu-baral-534792197/",
     },
     {
-      name: "SUDHAMAYA SAHOO",
+      name: "Sudhamaya Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/sudhamaya-sahoo-3b590618b/",
     },
     {
-      name: "SUJIT KUMAR SAHOO",
+      name: "Sujit Kumar Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/sujit773",
     },
     {
-      name: "SUSANT DASH",
+      name: "Susant Dash",
+      linkedinURL: "https://www.linkedin.com/in/susant-dash-246aa0167/",
     },
     {
-      name: "VISHNU PRIYA",
+      name: "Vishnu Priya",
+      linkedinURL: "https://www.linkedin.com/in/vishnu-priya22/",
     },
     {
-      name: "YAJNASENEE PRIYADARSINEE",
+      name: "Yajnasenee Priyadarsinee",
+      linkedinURL: "https://www.linkedin.com/in/yajnasenee/",
     },
+    { name: "R P Hitesh Behera" },
+    { name: "Archana Mishra" },
+    { name: "Lakshmi Prasad Das" },
+    { name: "Piyush Kumar Sahoo" },
+    { name: "Rashmi Ranjan Sahoo" },
   ],
   2021: [
     {
-      name: "Debi",
+      name: "Itishree Behera",
+      linkedinURL: "https://www.linkedin.com/in/itishree-behera-812b63191",
     },
     {
-      name: "Itishree bahera",
+      name: "Nitish Kumar Nayak",
+      linkedinURL: "https://www.linkedin.com/in/nitish-kumar-nayak/",
     },
     {
-      name: "Nitish",
+      name: "Sandeep Mishra",
+      linkedinURL: "https://www.linkedin.com/in/sandeep-mishra-55871917a",
     },
     {
-      name: "Sandeep",
+      name: "Satyajyoti Muduli",
+      linkedinURL: "https://www.linkedin.com/in/satyajyoti-muduli-4214aa148",
     },
     {
-      name: "Satyajyoti",
+      name: "Soman Pradhan",
+      linkedinURL: "https://www.linkedin.com/in/soman-pradhan-464330192",
     },
     {
-      name: "Soman",
+      name: "Suchismita Naik",
+      linkedinURL: "https://www.linkedin.com/in/suchismita-naik17",
     },
-    {
-      name: "Siba",
-    },
-    {
-      name: "Suchismita",
-    },
+    { name: "Debi" },
+    { name: "Siba" },
   ],
   2020: [
-    { name: "abhilash" },
-    { name: "Abhishek" },
-    { name: "Amar" },
-    { name: "Amrutansu" },
-    { name: "Aparna Purohit" },
-    { name: "Bikash" },
-    { name: "Birendra Roommate" },
-    { name: "Deekshya" },
+    {
+      name: "Abhilash Tripathy",
+      linkedinURL: "https://www.linkedin.com/in/abhilash-tripathy-9b0089261/",
+    },
+    {
+      name: "Abhishek Mishra",
+      linkedinURL: "https://www.linkedin.com/in/abhishek-mishra-58a289184",
+    },
+    {
+      name: "Amar Biswal",
+      linkedinURL: "https://www.linkedin.com/in/amar-biswal-113134157",
+    },
+    {
+      name: "Amrutansu Mishra",
+      linkedinURL: "https://www.linkedin.com/in/amrutansu-mishra",
+    },
+    {
+      name: "Aparna Purohit",
+      linkedinURL: "https://www.linkedin.com/in/aparna-purohit-375684141",
+    },
+    {
+      name: "Bikash Pradhan",
+      linkedinURL: "https://www.linkedin.com/in/bikash-pradhan-06704a165",
+    },
+    {
+      name: "Birendra Kumar Behera",
+      linkedinURL: "https://www.linkedin.com/in/birendra-kumar-behera",
+    },
+    {
+      name: "Deekshya Moharana",
+      linkedinURL: "https://www.linkedin.com/in/deekshyamoharana",
+    },
+    {
+      name: "Jyoti Prabha Barik",
+      linkedinURL: "https://www.linkedin.com/in/prabhabarik",
+    },
+    {
+      name: "Kajal Shaji",
+      linkedinURL: "https://www.linkedin.com/in/kajal-shaji-05a481185",
+    },
+    {
+      name: "Maheswar Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/maheswarsahoo47/",
+    },
+    {
+      name: "Priyadarshinee Behera",
+      linkedinURL:
+        "https://www.linkedin.com/in/priyadarshinee-behera-3982b3184/",
+    },
+    {
+      name: "Priyadarshini Pradhan",
+      linkedinURL:
+        "https://www.linkedin.com/in/priyadarshini-pradhan-42b413185",
+    },
+    {
+      name: "Priyanka Mahakud",
+      linkedinURL: "https://www.linkedin.com/in/priyanka-mahakud-5837581a7",
+    },
+    {
+      name: "Rudrakshya Behera",
+      linkedinURL: "https://www.linkedin.com/in/rudrakshya-behera-b74b6ab8",
+    },
+    {
+      name: "Samir Panda",
+      linkedinURL: "https://www.linkedin.com/in/samir-kumarpanda",
+    },
+    {
+      name: "Siddharth Mallik",
+      linkedinURL: "https://www.linkedin.com/in/siddharth-mallik-626a9627",
+    },
+    {
+      name: "Sidharth Das",
+      linkedinURL: "https://www.linkedin.com/in/sidharth-das-056020126",
+    },
+    {
+      name: "Tanmay Kumar Nayak",
+      linkedinURL: "https://www.linkedin.com/in/tanmay-nayak-458858178",
+    },
+    {
+      name: "Narayan Sahu",
+      linkedinURL: "https://www.linkedin.com/in/narayan-sahu-95a726199/",
+    },
+    {
+      name: "Pinaki Priyadarshani Swain",
+      linkedinURL: "https://www.linkedin.com/in/pinaki-priyadarsini-swain/",
+    },
+    {
+      name: "Prakash Singh",
+      linkedinURL: "https://www.linkedin.com/in/prakash-singh-154287128/",
+    },
+    {
+      name: "Sheetal Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/sheetal-sahoo97",
+    },
+    {
+      name: "Zahid Akhtar",
+      linkedinURL: "https://www.linkedin.com/in/zahid-akhtar-66b0315b",
+    },
     { name: "Deepak Coutinho" },
     { name: "Donally Patel" },
     { name: "Ibadat" },
-    { name: "Jyotiprabha Mca" },
-    { name: "kajal shaji" },
     { name: "Krishna" },
     { name: "Abinash Curti" },
-    { name: "maheshwar sahoo" },
-    { name: "Priyadarshinee Behera" },
-    { name: "Priyadarshini Pradhan" },
-    { name: "Priyanka Mahakud" },
-    { name: "Rudrakshya Behera" },
-    { name: "Samir Panda" },
-    { name: "Siddharth Mallik" },
-    { name: "Sidharth Das" },
     { name: "Swati Snigdha Behera" },
-    { name: "Tanmay Kumar Nayak" },
     { name: "Udaynath Pradhan" },
-    { name: "Narayan" },
-    { name: "Pinaki Priyadarshani Swain" },
     { name: "Pragyan" },
     { name: "Pragyan Behera" },
-    { name: "Prakash" },
-    { name: "Sheetal" },
     { name: "Tapan" },
-    { name: "Zahid Akhtar " },
   ],
   2019: [
-    { name: "alisha" },
-    { name: "Alisha" },
-    { name: "Bikash" },
-    { name: "Horit" },
-    { name: "Jeeban Das" },
-    { name: "Jeeban Das" },
-    { name: "Jiban Behera" },
+    {
+      name: "Alisha Panda",
+      linkedinURL: "https://www.linkedin.com/in/alisha-panda-ab1860154/",
+    },
+    {
+      name: "Bikash Das",
+      linkedinURL: "https://www.linkedin.com/in/bikash-das-2a689a151/",
+    },
+    {
+      name: "L. Horit Kumar Patro",
+      linkedinURL: "https://www.linkedin.com/in/l-horit-kumar-patro-047941b2/",
+    },
+    {
+      name: "Jeeban Kumar Dash",
+      linkedinURL: "https://www.linkedin.com/in/jeeban-kumar-dash-5996a92a1/",
+    },
+    {
+      name: "Jiban Behera",
+      linkedinURL: "https://www.linkedin.com/in/jiban-behera/",
+    },
+    {
+      name: "Sikta Sikata Jena",
+      linkedinURL: "https://www.linkedin.com/in/sikta-sikata-jena-82a335161/",
+    },
+    {
+      name: "Sobhesh Barun",
+      linkedinURL: "https://www.linkedin.com/in/sobhesh-barun-1b084a136/",
+    },
+    {
+      name: "Sonali Kar",
+      linkedinURL: "https://www.linkedin.com/in/sonali-kar-2a7173170/",
+    },
+    {
+      name: "Subhajita Samal",
+      linkedinURL: "https://www.linkedin.com/in/subhajitasamal/",
+    },
+    {
+      name: "Swastik Mohanty",
+      linkedinURL: "https://www.linkedin.com/in/swstkmohanty/",
+    },
+    {
+      name: "Ujwal Baisakh",
+      linkedinURL: "https://www.linkedin.com/in/ujwal-baisakh-556491170/",
+    },
     { name: "Sai Rituparna" },
-    { name: "Sikta" },
-    { name: "Sobesh" },
-    { name: "Sonali" },
-    { name: "Sonali" },
-    { name: "Subhajita" },
-    { name: "Swastik" },
     { name: "Prabhu" },
-    { name: "Ujjwal" },
   ],
   2018: [
-    { name: "Amarendra" },
-    { name: "Amarendra" },
+    {
+      name: "Amarendra Patra",
+      linkedinURL: "https://www.linkedin.com/in/amarendra-patra",
+    },
+    {
+      name: "Badal Kumar",
+      linkedinURL: "https://www.linkedin.com/in/badalkumars",
+    },
+    {
+      name: "Debabrata Thatoi",
+      linkedinURL: "https://www.linkedin.com/in/debabratthatoi/",
+    },
+    {
+      name: "Manoj Kumar Maharana",
+      linkedinURL: "https://www.linkedin.com/in/immanoj16/",
+    },
+    {
+      name: "Pradeepta Kumar Jena",
+      linkedinURL:
+        "https://www.linkedin.com/in/pradeepta-kumar-jena-518743312/",
+    },
+    {
+      name: "Rajaram Panda",
+      linkedinURL: "https://www.linkedin.com/in/rajaram-panda-362b85139/",
+    },
+    {
+      name: "Sobhan Thakur",
+      linkedinURL: "https://www.linkedin.com/in/sobhan-thakur-640275114/",
+    },
+    {
+      name: "Sameera Rath",
+      linkedinURL: "https://www.linkedin.com/in/sameera-rath-a47a13184/",
+    },
+    {
+      name: "Upasana Dash",
+      linkedinURL: "https://www.linkedin.com/in/upasanadash/",
+    },
+    {
+      name: "Sonam Panda",
+      linkedinURL: "https://www.linkedin.com/in/sonam-panda-8282a1226",
+    },
+    {
+      name: "Goutam Jena",
+      linkedinURL: "https://www.linkedin.com/in/goutamjena",
+    },
+    {
+      name: "Biranchi N.",
+      linkedinURL: "https://www.linkedin.com/in/biranchi-n-23034523a/",
+    },
+    {
+      name: "Bichitra Pradhan",
+      linkedinURL: "https://www.linkedin.com/in/bichitrapradhan",
+    },
+    {
+      name: "Alok Kumar Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/alok-kumar-sahoo-5b4639114/",
+    },
+    {
+      name: "Sonali Monalisa Panda",
+      linkedinURL:
+        "https://www.linkedin.com/in/sonali-monalisa-panda-bba9a3158/",
+    },
+    {
+      name: "Sarmistha Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/sarmistha-sahoo-7b147716b/",
+    },
     { name: "Arpita" },
-    { name: "Badal" },
     { name: "Bijayeni" },
     { name: "Darshi" },
-    { name: "Debabrata Thatoi" },
-    { name: "Manoj" },
     { name: "Omm" },
-    { name: "Pradeepta" },
-    { name: "Rajaram" },
-    { name: "Sobhan" },
     { name: "Sonu" },
     { name: "Juli" },
     { name: "Lelin" },
-    { name: "Sameera" },
-    { name: "Upasana" },
     { name: "Somyashree" },
-    { name: "Sonam" },
-    { name: "Goutam" },
-    { name: "Biranchi" },
-    { name: "Bichitra" },
-    { name: "Alok" },
-    { name: "Sonali" },
-    { name: "Sarmistha" },
   ],
   2017: [
-    { name: "Lopamundra Mishra" },
-    { name: "Srikant Mahananda" },
-    { name: "Anurag" },
-    { name: "Bharat" },
-    { name: "Bikash" },
-    { name: "Farman" },
-    { name: "Kamal" },
+    {
+      name: "Lopamudra Mishra",
+      linkedinURL: "https://www.linkedin.com/in/lopamudra-mishra-42ba8110a",
+    },
+    {
+      name: "Srikant Mahananda",
+      linkedinURL: "https://www.linkedin.com/in/srikant-m-ba8360159/",
+    },
+    {
+      name: "Anurag Xaxa",
+      linkedinURL: "https://www.linkedin.com/in/anuragxaxa/",
+    },
+    {
+      name: "Bharat Bhusan Das",
+      linkedinURL: "https://www.linkedin.com/in/bharatbhusandash/",
+    },
+    {
+      name: "Bikash Baral",
+      linkedinURL: "https://www.linkedin.com/in/bikash-baral-06b944107/",
+    },
+    {
+      name: "Farman Elahi",
+      linkedinURL: "https://www.linkedin.com/in/farmaanelahi/",
+    },
+    {
+      name: "Kamal Panigrahi",
+      linkedinURL: "https://www.linkedin.com/in/kamalpanigrahi/",
+    },
+    {
+      name: "Paritosh Mohanta",
+      linkedinURL: "https://www.linkedin.com/in/paritos/",
+    },
+    {
+      name: "Rosali Naik",
+      linkedinURL: "https://www.linkedin.com/in/rosali-naik-768370125/",
+    },
+    {
+      name: "Saroj Kumar Hotta",
+      linkedinURL: "https://www.linkedin.com/in/sarojjj93/",
+    },
+    {
+      name: "Lopamudra Pradhan",
+      linkedinURL: "https://www.linkedin.com/in/lopamudra-pradhan-7a2538100/",
+    },
+    {
+      name: "Manju L. Bage",
+      linkedinURL: "https://www.linkedin.com/in/manju-l-bage-803640a0/",
+    },
+    {
+      name: "Santosh Kumar Dash",
+      linkedinURL: "https://www.linkedin.com/in/santosh-kumar-dash-1164a8107",
+    },
+    {
+      name: "Kshirod Senapti",
+      linkedinURL: "https://www.linkedin.com/in/kshirod-senapati-1239a3111/",
+    },
+    {
+      name: "Partha Sarathi Nanda",
+      linkedinURL: "https://www.linkedin.com/in/parthasarathi0103/",
+    },
     { name: "Dev" },
-    { name: "Paritosh" },
     { name: "Pulak" },
-    { name: "Raju" },
-    { name: "Saroj" },
     { name: "Partha Bhai" },
     { name: "Shrikant" },
-    { name: "Lopamudra" },
-    { name: "Rosali" },
-    { name: "Lipika" },
-    { name: "Manju" },
-    { name: "Santosh Kumar Dash" },
-    { name: "Khirod" },
-    { name: "Partha" },
   ],
   2016: [
-    { name: "Sikha Bhuyan" },
-    { name: "Pranita Das" },
+    {
+      name: "Sikha Bhuyan",
+      linkedinURL: "https://www.linkedin.com/in/sikhabhuyan/",
+    },
+    {
+      name: "Pranita Das",
+      linkedinURL: "https://www.linkedin.com/in/pranita-das-59899774/",
+    },
+    {
+      name: "Anil Kumar Moharana",
+      linkedinURL: "https://www.linkedin.com/in/akumarmo/",
+    },
+    {
+      name: "Satish Kumar Bhoi",
+      linkedinURL: "https://www.linkedin.com/in/satishbhoi/",
+    },
+    {
+      name: "Gopinath Mahakud",
+      linkedinURL: "https://www.linkedin.com/in/gopinath-mahakud-18373989/",
+    },
+    {
+      name: "Biswajeet Apata",
+      linkedinURL: "https://www.linkedin.com/in/biswajeet-apata-762699141/",
+    },
+    {
+      name: "Manoj Behera",
+      linkedinURL: "https://www.linkedin.com/in/manoj-behera-aa6bb6289/",
+    },
+    {
+      name: "Suchitra Dash",
+      linkedinURL: "https://www.linkedin.com/in/suchitradash06/",
+    },
+    {
+      name: "Deepti Ranjan Panda",
+      linkedinURL: "https://www.linkedin.com/in/diptiranjan-panda-626b4230/",
+    },
+    {
+      name: "Bikram Sao",
+      linkedinURL: "https://www.linkedin.com/in/saobikram",
+    },
+    {
+      name: "Bibekini Behera",
+      linkedinURL: "linkedin.com/in/bibekini-behera-938820b0",
+    },
+    {
+      name: "Prashant",
+      linkedinURL: "https://www.linkedin.com/in/prashantgajendra/",
+    },
+    {
+      name: "Ramgopal Panda",
+      linkedinURL: "https://www.linkedin.com/in/ramgopal-panda-20078a90/",
+    },
+    { name: "Sribasta" },
+    { name: "Sangram" },
+    { name: "Sapta" },
+    { name: "Smruti Lipsa" },
+    { name: "Sagarika Satapathy" },
+    { name: "Adyadipa Acharya" },
     { name: "Sonali" },
     { name: "Prashant" },
     { name: "Sahoo Prashant" },
     { name: "Mitu" },
     { name: "Deepi" },
-    { name: "Anil" },
-    { name: "Sribasta" },
-    { name: "Satish" },
-    { name: "Sangram" },
-    { name: "Sapta" },
-    { name: "Gopinath" },
-    { name: "Smruti Lipsa" },
-    { name: "Sagarika Satapathy" },
-    { name: "Biswajeet Apata" },
-    { name: "Adyadipa Acharya" },
-    { name: "Manoj" },
-    { name: "Suchitra Dash" },
-    { name: "Deepti Ranjan Panda" },
-    { name: "Bikram Sao" },
-    { name: "Bibekini Behera" },
-    { name: "Prashant" },
   ],
   2015: [
-    { name: "Arabinda" },
+    {
+      name: "Arabinda Praharaj",
+      linkedinURL: "https://www.linkedin.com/in/arabinda-praharaj-3804a9135/",
+    },
+    {
+      name: "Manas Kumar Swain",
+      linkedinURL: "https://www.linkedin.com/in/manas-kumar-sawn-1b889690/",
+    },
+    {
+      name: "Surykanta Rout",
+      linkedinURL: "https://www.linkedin.com/in/suryakanta-rout/",
+    },
+    {
+      name: "Shashwat Prusty",
+      linkedinURL: "https://www.linkedin.com/in/shashwat-prusty/",
+    },
+    {
+      name: "Rajendra Kumar Padhy",
+      linkedinURL: "https://www.linkedin.com/in/rajendra-kumar-padhy-0804b092/",
+    },
+    {
+      name: "Pratap Mishra",
+      linkedinURL: "https://www.linkedin.com/in/pratap-mishra-333748173/",
+    },
     { name: "Chiku" },
     { name: "Fakir" },
     { name: "Samiskhya" },
     { name: "Sikha" },
-    { name: "Surya" },
     { name: "Swati" },
     { name: "Arun" },
     { name: "Sasmita" },
-    { name: "Shaswat" },
     { name: "Padhi" },
     { name: "Padma" },
     { name: "Kamakshya" },
-    { name: "likuna" },
+    { name: "Likuna" },
     { name: "peda" },
-    { name: "Rajendra" },
     { name: "snehalata" },
     { name: "Padhi" },
-    { name: "Pratap" },
     { name: "sunit" },
   ],
   2014: [
-    { name: "Satyajeet" },
+    {
+      name: "Satyajit Kumar Naik",
+      linkedinURL: "https://www.linkedin.com/in/satyajitkumarnaik/",
+    },
+    {
+      name: "Sasmita Nayak",
+      linkedinURL: "https://www.linkedin.com/in/sasmita-nayak-190b13159",
+    },
+    {
+      name: "Jaganath Nanda",
+      linkedinURL: "https://www.linkedin.com/in/jagannath-nanda-02b82b102",
+    },
     { name: "Pradeep" },
     { name: "Loka" },
     { name: "Baja" },
@@ -1027,7 +1650,6 @@ export const alumniData = {
     { name: "chinmay" },
     { name: "Manas" },
     { name: "Rajendra" },
-    { name: "Sasmita Nayak" },
     { name: "Rupu" },
     { name: "Sobhi Sobhna" },
     { name: "San" },
@@ -1036,69 +1658,120 @@ export const alumniData = {
     { name: "Sugyani" },
     { name: "Sunil" },
     { name: "Chandra" },
-    { name: "Jagganath" },
     { name: "Pradeep" },
     { name: "Satyabrata" },
   ],
   2013: [],
   2012: [],
   2011: [
-    { name: "Debasish Jena" },
+    {
+      name: "Debasish Jena",
+      linkedinURL: "https://www.linkedin.com/in/debasisjenasalesforce/",
+    },
+    {
+      name: "Madhushmita Mishra",
+      linkedinURL: "https://www.linkedin.com/in/madhusmita-misra-604292232",
+    },
     { name: "Anil Maharana" },
     { name: "Prathyush" },
     { name: "Chitanya" },
     { name: "Dilip" },
     { name: "Varun" },
-    { name: "Madhushmita Mishra" },
   ],
   2010: [],
-  2009: [],
+  2009: [
+    {
+      name: "Mahesh Jena",
+      linkedinURL: "https://www.linkedin.com/in/mahesh-jena-mj-98188527/",
+      imgURL:
+        "https://media.licdn.com/dms/image/v2/D5603AQF2aJWLYbaFCw/profile-displayphoto-scale_400_400/B56ZrnbKcgLIAk-/0/1764819264792?e=1768435200&v=beta&t=UgrKpeUXrdyqq1XFgnxWRdNSrwcxuJDpR-NacnVdy_o",
+    },
+  ],
   2008: [
+    {
+      name: "Padmaja Mishra",
+      linkedinURL: "https://www.linkedin.com/in/padmaja-mishra-1bbbaa38",
+    },
     { name: " Boxy   " },
     { name: " Ganapati  " },
     { name: " Shankar  " },
     { name: " Manas " },
     { name: " Hansda " },
-    { name: "Padmaja " },
     { name: "Shankar  " },
   ],
   2007: [
-    { name: "Prakash Panda " },
+    {
+      name: "Prakash Ranjan Panda",
+      linkedinURL: "https://www.linkedin.com/in/prakash-ranjan-panda-93a59b2a8",
+    },
+    {
+      name: "Subodh palei",
+      linkedinURL: "https://www.linkedin.com/in/subodh-palei-94894865/",
+    },
     { name: "Bidhu Daa" },
-    { name: "tarun naik" },
-    { name: "Subodh palei" },
+    { name: "Tarun naik" },
     { name: "Ganesh Sethi" },
     { name: "Rajesh Samal" },
     { name: "Priya " },
   ],
   2006: [
-    { name: "Kalakar " },
+    {
+      name: "Kalakar Dhrupati",
+      linkedinURL: "https://www.linkedin.com/in/kalakardhrupati/",
+      imgURL:
+        "https://media.licdn.com/dms/image/v2/C4D03AQHYa847K-VNbg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516764885846?e=1768435200&v=beta&t=7mWssMJBzoXpDljJBVf_KtLYj01YRNqLPVSfCWUdfQA",
+    },
     { name: "Acharya  " },
     { name: "Bage  " },
     { name: "Gandhi  " },
     { name: "Gyana  " },
     { name: "Monalisha  " },
-    { name: " Santosh Mallick " },
+    { name: "Santosh Mallick " },
   ],
-  2005: [],
+  2005: [
+    {
+      name: "Rajesh Rungta",
+      linkedinURL: "https://www.linkedin.com/in/rajeshrungta/",
+    },
+    {
+      name: "Siva Sankar Raparthi",
+      linkedinURL: "https://www.linkedin.com/in/sivasankarraparthi/",
+    },
+    {
+      name: "Jyoti Prakash Nayak",
+      linkedinURL: "https://www.linkedin.com/in/jyotiprakash-nayak-2a5b46141",
+    },
+  ],
   2004: [
+    {
+      name: "Pradosh Suar",
+      linkedinURL: "https://www.linkedin.com/in/pradosh-suar-a77690119/",
+    },
+    {
+      name: "Tanmay Padhi",
+      linkedinURL: "https://www.linkedin.com/in/tanmaypadhi/",
+    },
     { name: "Akhil Sahoo" },
     { name: "Deba Prasad Tripathy" },
     { name: "Rajesh Pratap" },
     { name: "Manoj Ranjan Khatua" },
     { name: "Pradeep Meher" },
-    { name: "Pradosh Suar" },
     { name: "Pradyumna Satpathy" },
     { name: "Rajesh Rungta" },
     { name: "Raparthi Siva shankar" },
-    { name: "Tanmay Padhi" },
     { name: "Jyoti Prakash Nayak" },
     { name: "Sanjay Sarangi" },
   ],
   2003: [
-    { name: " Biswanath Pati" },
-    { name: " Mahaswata " },
-    { name: " Manas jena" },
+    {
+      name: "Biswanath Pati",
+      linkedinURL: "https://www.linkedin.com/in/dr-biswanath-pati-53ba0171",
+    },
+    {
+      name: "Manas jena",
+      linkedinURL: "https://www.linkedin.com/in/manas-jena-mj-a086b28/",
+    },
+    { name: "Mahaswata " },
   ],
   2002: [
     { name: " Janma  " },
@@ -1110,15 +1783,29 @@ export const alumniData = {
     { name: " Biswanath Mahapatra " },
   ],
   2001: [
+    {
+      name: "Tapan Dalai",
+      linkedinURL: "https://www.linkedin.com/in/tapan-dalai-86aa709",
+    },
+    {
+      name: "Neel Ratan Mohapatra",
+      linkedinURL: "https://www.linkedin.com/in/neel-ratan-mahapatra-77a3b237",
+    },
+    {
+      name: "Shiba Moharana",
+      linkedinURL: "https://www.linkedin.com/in/shiba-moharana-6075b52b/",
+    },
     { name: "Jayanta Karadia" },
     { name: "Amit Lal" },
-    { name: "Tapan Dalai" },
     { name: "Subhendu Mohanty" },
-    { name: "Neel Ratan Mohapatra" },
     { name: "Jyoti Mohapatra" },
     { name: "Satmanyu" },
   ],
   2000: [
+    {
+      name: "Debasis Mohanty",
+      linkedinURL: "https://www.linkedin.com/in/debasis-mohanty-7063341b/",
+    },
     { name: "Sridhar" },
     { name: "Biswajit Patel" },
     { name: "Subhesh" },
@@ -1129,6 +1816,10 @@ export const alumniData = {
   ],
 
   1999: [
+    {
+      name: "Manoj K. Harichandan",
+      linkedinURL: "https://www.linkedin.com/in/manoj-kumar-harichandan/",
+    },
     { name: "Biswajeet" },
     { name: "Neha Sharma" },
     { name: "Srinibas Das" },
@@ -1141,6 +1832,10 @@ export const alumniData = {
     { name: "Duvey" },
   ],
   1997: [
+    {
+      name: "Srikant Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/srikanta-sahoo-8921144/",
+    },
     { name: "Ajit" },
     { name: "Srinibas" },
     { name: "Bramha Mohanty" },
@@ -1154,7 +1849,10 @@ export const alumniData = {
     { name: "Nilamadhab" },
   ],
   1996: [
-    { name: "Bijaya Sahu" },
+    {
+      name: "Bijaya Kumar Sahoo",
+      linkedinURL: "https://www.linkedin.com/in/bijaya-kumar-sahoo-89249914/",
+    },
     { name: "Arun Patra" },
     { name: "Rajeev Gupta" },
     { name: "Nishikant Sahoo" },

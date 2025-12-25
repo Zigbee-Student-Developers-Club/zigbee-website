@@ -15,7 +15,7 @@ interface AlumniProps {
 
 const Alumni = ({ selectedYear, setSelectedYear }: AlumniProps) => {
   const router = useRouter();
-  const endYear = new Date().getFullYear();
+  const endYear = new Date().getFullYear() + 2;
   const startYear = 1996;
 
   const batchTabs = Array.from({ length: endYear - startYear + 1 }, (_, i) => ({
