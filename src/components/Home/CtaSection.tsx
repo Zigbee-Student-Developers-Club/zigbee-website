@@ -3,6 +3,8 @@ import React from "react";
 
 import routes from "@/routes";
 
+import { magazineData } from "../magazines/constants";
+
 const Cta: React.FC = () => {
   return (
     <section className="py-20 relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
@@ -23,10 +25,7 @@ const Cta: React.FC = () => {
             their skills in our creative tech community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://drive.google.com/file/d/1mZfbLe1yexz8a16PpsF4GouvFGOTCw6I/view?usp=drivesdk"
-              target="_blank"
-            >
+            <Link href={magazineData[0].downloadUrl} target="_blank">
               <button className="cursor-pointer px-8 py-4 bg-white text-purple-600 border-2 border-purple-200 rounded-full font-semibold hover:bg-purple-50 hover:border-purple-300 transition-all duration-300 shadow-md hover:shadow-lg">
                 Checkout our latest magazine
               </button>
